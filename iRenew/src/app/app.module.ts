@@ -11,8 +11,7 @@ import { RegisterPageComponent } from './components/register-page/register-page.
     AppComponent,
 
     NavBarComponent,
-    RegisterPageComponent  
-
+    RegisterPageComponent,  
     NavBarComponent    
 
   ],
