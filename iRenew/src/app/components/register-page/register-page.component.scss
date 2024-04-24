@@ -3,6 +3,7 @@
 
 .container {
     width: 50%;
+    margin-top: 100px;
     
     
 }
@@ -32,10 +33,13 @@
 }
 .full-container{
     display: inline flex; //creates a separation between 2 containers
+    margin-top: 100px;
 }
 .form-container {
     margin-top: 120px;
     margin-left: 300px;
+    
+    
 }
 .sign-up-heading {
     font-size: 30px;
