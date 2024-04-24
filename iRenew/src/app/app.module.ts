@@ -9,8 +9,12 @@ import { RegisterPageComponent } from './components/register-page/register-page.
 @NgModule({
   declarations: [
     AppComponent,
+
     NavBarComponent,
     RegisterPageComponent  
+
+    NavBarComponent    
+
   ],
   imports: [
     BrowserModule,
