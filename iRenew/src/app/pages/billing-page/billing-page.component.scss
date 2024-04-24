@@ -1,0 +1,60 @@
+.container {
+    display: grid;
+    grid-template-areas: 'billing address'
+                         'billing address';
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    width: 193px;
+    height: 42px;
+    border: none; 
+}
+
+.billing input,
+.address input {
+    height: 39px;
+    width: 277px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding: 8px; 
+    border: 1px solid #ced4da; 
+}
+
+.button {
+    text-align: center;
+}
+
+.form-select{
+    height: 30px;
+    width: 200px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-areas: 'billing'
+                             'address';
+        grid-gap: 20px;
+    }
+
+    .billing,
+    .address {
+        width: 100%; 
+    }
+
+    button {
+        width: 100%; 
+    }
+
+    .billing input,
+    .address input {
+        width: 100%;
+    }
+}
