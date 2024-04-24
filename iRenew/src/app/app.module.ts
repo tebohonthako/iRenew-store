@@ -7,21 +7,17 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 
 import { RegisterPageComponent } from './components/register-page/register-page.component';
+import { BillingPageComponent } from './pages/billing-page/billing-page.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-
-    NavBarComponent, // importing our NavBar
-    BillingPageComponent //
-
-
+    NavBarComponent,
+    BillingPageComponent, 
     NavBarComponent,
     RegisterPageComponent,  
-    NavBarComponent    
-
-
+    NavBarComponent  
   ],
   imports: [
     BrowserModule,
