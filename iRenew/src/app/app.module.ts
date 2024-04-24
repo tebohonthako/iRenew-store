@@ -15,9 +15,7 @@ import { BillingPageComponent } from './pages/billing-page/billing-page.componen
   declarations: [
     AppComponent,
     NavBarComponent,
-
-    LoginComponent    
-
+    LoginComponent ,   
     BillingPageComponent, 
     NavBarComponent,
     RegisterPageComponent,  
