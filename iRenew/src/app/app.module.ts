@@ -11,6 +11,7 @@ import { LoginComponent } from './pages/login/login.component';
 
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 
 
 
@@ -21,7 +22,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
     LoginComponent ,   
     BillingPageComponent, 
     RegisterPageComponent,  
-    LandingPageComponent  
+    LandingPageComponent, CheckoutPageComponent  
 
   ],
   imports: [
