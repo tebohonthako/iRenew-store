@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RegisterPageComponent } from './pages/register-page/register-page.component';
-import { BillingPageComponent } from './pages/billing-page/billing-page.component';
-import { LandingPageComponent } from './pages/landing-page/landing-page.component';
-import { LoginComponent } from './pages/login/login.component';
+import { RegisterPageComponent } from './components/pages/register-page/register-page.component';
+import { BillingPageComponent } from './components/pages/billing-page/billing-page.component';
+import { LandingPageComponent } from './components/pages/landing-page/landing-page.component';
+import { LoginComponent } from './components/pages/login/login.component';
 
 
 const routes: Routes = [
