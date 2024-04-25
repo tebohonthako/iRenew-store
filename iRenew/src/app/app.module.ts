@@ -10,7 +10,7 @@ import { LoginComponent } from './pages/login/login.component';
 
 
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
-import { BillingPageComponent } from './pages/billing-page/billing-page.component';
+
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 
 
