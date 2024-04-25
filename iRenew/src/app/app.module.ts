@@ -6,15 +6,29 @@ import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 import { BillingPageComponent } from './pages/billing-page/billing-page.component';
 
+import { LoginComponent } from './pages/login/login.component';
+
+
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { BillingPageComponent } from './pages/billing-page/billing-page.component';
+import { LandingPageComponent } from './pages/landing-page/landing-page.component';
+
+
+
 @NgModule({
   declarations: [
     AppComponent,
     NavBarComponent,
-    BillingPageComponent    // importing our NavBar
+    LoginComponent ,   
+    BillingPageComponent, 
+    RegisterPageComponent,  
+    LandingPageComponent  
+
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule, 
+    AppRoutingModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

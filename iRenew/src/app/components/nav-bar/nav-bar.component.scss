@@ -1,0 +1,40 @@
+body {
+
+    margin-bottom: 10px;
+    position: fixed;
+}
+
+.navbar-brand {
+    margin-left: 100px;
+    
+}
+
+.navbar {
+    background-color: black;
+    
+}
+.logo-text, .logo-image {
+    color: white;
+    text-decoration: none;
+}
+.logo-image {
+    margin-left: 20px;
+}
+.cart-icon {
+    margin-left: 700px;
+    align-items: center;
+}
+.profile-icon {
+   
+   margin-left: 45px; 
+   
+}
+#logout-text {
+    color: white;
+    padding: 5px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
