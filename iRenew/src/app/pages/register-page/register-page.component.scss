@@ -3,6 +3,7 @@
 
 .container {
     width: 50%;
+    margin-top: 100px;
     
     
 }
@@ -23,19 +24,30 @@
 
 #iphone-pink {
     width: 5rem;
-    margin:auto
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+    margin-left: 30rem;
+    
 }
 
 .container-register {
     width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
 
 }
 .full-container{
     display: inline flex; //creates a separation between 2 containers
+    margin-top: 100px;
 }
 .form-container {
     margin-top: 120px;
     margin-left: 300px;
+    
+    
 }
 .sign-up-heading {
     font-size: 30px;
@@ -51,7 +63,7 @@
 #inputName, #inputEmail, #inputPassword{
     border-radius: 8px;
     padding: 10px;
-    width: 200px;
+    width: 400px;
     border: 0.2px solid rgb(215, 210, 210);
     color: rgb(213, 210, 210);
 
@@ -59,4 +71,7 @@
 .register-button{
     border-radius: 10px;
     padding: 10px;
+    width: 250px;
+    border-radius: 30px;
+    margin: 45px;
 }

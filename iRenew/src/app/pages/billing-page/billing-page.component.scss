@@ -1,12 +1,15 @@
 .container {
     display: grid;
-    grid-template-areas: 'billing address'
-                         'billing address';
+    grid-template-areas: 'address billing'
+                         'address billing';
     justify-content: space-around;
     padding-top: 20px;
     padding-bottom: 20px;
     margin-top: 20%;
 }
+
+.billing{ grid-area: billing;}
+.address{grid-area: address;}
 
 button {
     color: white;
@@ -32,7 +35,7 @@ button {
 }
 
 .form-select{
-    height: 30px;
+    height: 35px;
     width: 200px;
     margin-bottom: 25px;
     border-radius: 20px;
