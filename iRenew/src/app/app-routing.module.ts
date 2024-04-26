@@ -25,7 +25,7 @@ const routes: Routes = [
   { path: 'profile', component: ProfilePageComponent },
 
   
-//  { path: '**', component: PageNotFoundComponent },  Wildcard route for a 404 page
+//  { path: '**', component: PageNotFoundComponent },  Wildcard route for a 404 page (page not found)
   
   ];
 

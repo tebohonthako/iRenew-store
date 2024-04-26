@@ -1,0 +1,40 @@
+{
+    "products": [
+      { "id": "iPhone 11", 
+      "title": "a title", 
+      "description": "Serious Black",
+      "rating": "⭐⭐⭐⭐⭐",
+      "price": "10000",
+      "currency": "R",
+      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-iphone-11-128gb-6.1.jpg",
+      "specs": [
+            "Display: Liquid Retina HD display",
+            "Processor: A13 Bionic chip",
+            "Camera System: Dual 12MP Ultra Wide and Wide cameras",
+            "Face ID: Enabled for secure authentication",
+            "Battery Life: Up to 17 hours of talk time",
+            "Water Resistance: Rated IP68 (maximum depth of 2 meters up to 30 minutes)"
+          ]
+    },
+    { "id": "iPhone 11", 
+    "title": "a title", 
+    "description": "Serious Black",
+    "rating": "⭐⭐⭐⭐⭐",
+    "price": "10000",
+    "currency": "R",
+    "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-iphone-11-128gb-6.1.jpg",
+    "specs": [
+          "Display: Liquid Retina HD display",
+          "Processor: A13 Bionic chip",
+          "Camera System: Dual 12MP Ultra Wide and Wide cameras",
+          "Face ID: Enabled for secure authentication",
+          "Battery Life: Up to 17 hours of talk time",
+          "Water Resistance: Rated IP68 (maximum depth of 2 meters up to 30 minutes)"
+        ]
+  },
+
+    {
+        
+    }
+    ]
+  }
