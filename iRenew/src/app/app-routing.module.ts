@@ -5,6 +5,7 @@ import { BillingPageComponent } from './pages/billing-page/billing-page.componen
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
+import { ProfilePageComponent } from './components/profile-page/profile-page.component';
 
 
 const routes: Routes = [
@@ -20,6 +21,8 @@ const routes: Routes = [
   { path: 'billing', component: BillingPageComponent },
 
   { path: 'checkout', component: CheckoutPageComponent },
+
+  { path: 'profile', component: ProfilePageComponent },
 
   
 //  { path: '**', component: PageNotFoundComponent },  Wildcard route for a 404 page

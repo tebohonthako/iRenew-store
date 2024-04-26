@@ -12,6 +12,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
+import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 
 
 
@@ -22,7 +23,7 @@ import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.compo
     LoginComponent ,   
     BillingPageComponent, 
     RegisterPageComponent,  
-    LandingPageComponent, CheckoutPageComponent  
+    LandingPageComponent, CheckoutPageComponent, ProdutsPageComponent  
 
   ],
   imports: [
