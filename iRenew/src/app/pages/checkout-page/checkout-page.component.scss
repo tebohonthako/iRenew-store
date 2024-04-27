@@ -1,19 +1,61 @@
-.shipping-address {
+.shipping-address, .review-bag {
     border: 1px solid rgb(212, 207, 207);
     max-width: 50%;
     justify-content: center;
     align-items: center;
     display: flex;
-    padding: 1em;
-    margin-left: 2em;
-    padding: 10em;
-    border-radius: 0.7em;
+    padding: 10rem;
+    border-radius: 0.8em;
     margin: auto;
-    margin-top: 10em;
+    margin-top: 10rem;
+    border: 0.15rem solid black;
+    
 
 }
-h1 .shipping-heading {
+.review-bag {
+    position: absolute;
+    left: 10rem;
+    top: 22rem;
+    width: 80%;
+    max-width: 50%;
+}
+
+#review-bags {
+    position: absolute;
+    left: 1.5rem;
+    top: 2rem;
+    font-weight: 400;
+
+}
+
+.shipping-heading {
     text-align: center;
-    margin-top: -10em;
+    position: absolute;
+    top: 10.5rem;
+    left: 12rem;
+    font-weight: 400;
 
 }
+
+.user-address {
+    margin-left: 20rem;
+    position: absolute;
+    top: 16rem;
+    left: -7.5rem;
+}
+
+.change-user-details {
+    position: absolute;
+    left: 45rem;
+    top: 0.5rem;
+    align-items: center;
+    border-radius: 0.8rem;
+    padding: 0.6rem;
+    width: 40%;
+    background-color: white;
+
+}
+.container {
+    margin-left: 10rem;
+}
+
