@@ -1,5 +1,9 @@
+body {
+    font-size: 0.7rem;
+}
+
+
 .shipping-address, .review-bag {
-    border: 1px solid rgb(212, 207, 207);
     max-width: 50%;
     justify-content: center;
     align-items: center;
@@ -9,22 +13,36 @@
     margin: auto;
     margin-top: 10rem;
     border: 0.15rem solid black;
-    
+    font-size: 0.7rem;
 
 }
+
+
 .review-bag {
     position: absolute;
     left: 10rem;
     top: 22rem;
-    width: 80%;
+    width: 50%;
     max-width: 50%;
+    padding: 3.4rem;
+}
+#exampleCheck1 {
+    margin-left: -0.2rem;
+    padding: 0.5rem;
+}
+.billing-add {
+    margin-left: 2.9rem;
+}
+.mastercard-label {
+    margin-left: 1rem;
 }
 
 #review-bags {
     position: absolute;
     left: 1.5rem;
-    top: 2rem;
+    top: 1rem;
     font-weight: 400;
+    font-size: 1.6rem;
 
 }
 
@@ -34,6 +52,7 @@
     top: 10.5rem;
     left: 12rem;
     font-weight: 400;
+    font-size: 1.6rem;
 
 }
 
@@ -46,7 +65,7 @@
 
 .change-user-details {
     position: absolute;
-    left: 45rem;
+    left: 25rem;
     top: 0.5rem;
     align-items: center;
     border-radius: 0.8rem;
@@ -57,5 +76,24 @@
 }
 .container {
     margin-left: 10rem;
+    max-width: 50%;
 }
 
+.product-name {
+    font-size: 1.7rem;
+}
+#product-pic {
+    position: absolute;
+    left: 2rem;
+    top: 2rem;
+}
+
+.product-specs {
+    position: relative;
+    top: 1rem;
+    left: -4rem;
+}
+
+.form-billing {
+    margin-top: 2rem;
+}
