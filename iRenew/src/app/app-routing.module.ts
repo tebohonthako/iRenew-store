@@ -5,7 +5,8 @@ import { BillingPageComponent } from './pages/billing-page/billing-page.componen
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
-import { ProfilePageComponent } from './components/profile-page/profile-page.component';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 
 
 const routes: Routes = [
@@ -23,6 +24,10 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutPageComponent },
 
   { path: 'profile', component: ProfilePageComponent },
+
+  { path: 'products', component: ProdutsPageComponent },
+
+ 
 
   
 //  { path: '**', component: PageNotFoundComponent },  Wildcard route for a 404 page (page not found)

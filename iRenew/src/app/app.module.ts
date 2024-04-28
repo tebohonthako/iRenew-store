@@ -13,6 +13,7 @@ import { RegisterPageComponent } from './pages/register-page/register-page.compo
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -23,12 +24,15 @@ import { ProdutsPageComponent } from './pages/produts-page/produts-page.componen
     LoginComponent ,   
     BillingPageComponent, 
     RegisterPageComponent,  
-    LandingPageComponent, CheckoutPageComponent, ProdutsPageComponent  
+    LandingPageComponent, 
+    CheckoutPageComponent, 
+    ProdutsPageComponent  
 
   ],
   imports: [
     BrowserModule, 
     AppRoutingModule,
+    HttpClientModule
     
   ],
   providers: [],
