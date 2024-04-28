@@ -26,9 +26,15 @@
             United States of America <br />
           </p>
           <!-- change user info button  -->
-          <button class="change-user-details" onClick="{handleChangeUserInfo}">
-            Change
-          </button>
+          <a href="/billing">
+            <button
+              class="change-user-details"
+              
+              onClick="{handleChangeUserInfo}"
+            >
+              Change
+            </button>
+          </a>
 
           <form action="" class="form-billing">
             <img
@@ -36,7 +42,9 @@
               alt="mastercard icon"
               width="60"
             />
-            <label for="" class="mastercard-label">Mastercard ending in xxxx</label>
+            <label for="" class="mastercard-label"
+              >Mastercard ending in xxxx</label
+            >
             <div class="form-check">
               <input
                 type="checkbox"
