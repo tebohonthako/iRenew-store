@@ -5,6 +5,7 @@
       "title": "iPhone 13 Pro",
       "description": "Graphite",
       "condition": "⭐⭐⭐⭐⭐",
+      "category": "iPhones",
       "price": "9000",
       "currency": "R",
       "imageUrl": "assets/images/iphone15-red.jpeg",
@@ -22,6 +23,7 @@
       "title": "iPhone 13",
       "description": "Midnight",
       "condition": "⭐⭐⭐⭐⭐",
+      "category": "iPhones",
       "price": "7500",
       "currency": "R",
       "imageUrl": "assets/images/iphone_14_pro_max_gold.webp",
@@ -39,6 +41,7 @@
       "title": "iPhone 12",
       "description": "Product(White)",
       "condition": "⭐⭐⭐",
+      "category": "iPhones",
       "price": "5000",
       "currency": "R",
       "imageUrl": "assets/images/iphone12.webp",
@@ -52,13 +55,68 @@
       ]
     },
     {
-      "id": 4,
+      "id": 7,
       "title": "MacBook Air (2022)",
       "description": "Silver",
       "condition": "⭐⭐⭐⭐⭐",
+      "category": "iPhones",
       "price": "12000",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-macbook-air-2022-256gb.jpg",
+      "imageUrl": "assets/images/macbook air 2022.png",
+      "specs": [
+        "Display: Retina display with True Tone",
+        "Processor: Apple M2 chip",
+        "Storage: 256GB SSD",
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 18 hours of web browsing",
+        "Weight: 1.29 kg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "MacBook Pro (2022)",
+      "description": "Space Gray",
+      "condition": "⭐⭐⭐⭐",
+      "category": "iPhones",
+      "price": "15000",
+      "currency": "R",
+      "imageUrl": "assets/images/macbook pro 2022.webp",
+      "specs": [
+        "Display: Liquid Retina XDR display",
+        "Processor: Apple M2 Pro chip",
+        "Storage: 512GB SSD",
+        "Touch Bar: Enabled",
+        "Battery Life: Up to 17 hours of web browsing",
+        "Weight: 1.4 kg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Mac mini (2022)",
+      "description": "Space Gray",
+      "condition": "⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "10000",
+      "currency": "R",
+      "imageUrl": "assets/images/macbook air 2017.jpeg",
+      "specs": [
+        "Processor: Apple M2 chip",
+        "Memory: 8GB unified memory",
+        "Storage: 256GB SSD",
+        "Ports: Thunderbolt 4, HDMI 2.0, USB-A",
+        "Dimensions: 19.7 x 19.7 x 3.6 cm",
+        "Weight: 1.2 kg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "MacBook Air 15-inch M3",
+      "description": "Silver",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "25000",
+      "currency": "R",
+      "imageUrl": "assets/images/macbook_air_15_M3.webp",
       "specs": [
         "Display: Retina display with True Tone",
         "Processor: Apple M2 chip",
@@ -70,46 +128,49 @@
     },
     {
       "id": 5,
-      "title": "MacBook Pro (2022)",
-      "description": "Space Gray",
-      "condition": "⭐⭐⭐⭐",
-      "price": "15000",
+      "title": "MacBook Air 13-inch M1",
+      "description": "Silver",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "12999",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-macbook-pro-2022-512gb.jpg",
+      "imageUrl": "assets/images/macbooair-m1-13inch.webp",
       "specs": [
-        "Display: Liquid Retina XDR display",
-        "Processor: Apple M2 Pro chip",
-        "Storage: 512GB SSD",
-        "Touch Bar: Enabled",
-        "Battery Life: Up to 17 hours of web browsing",
-        "Weight: 1.4 kg"
+        "Display: Retina display with True Tone",
+        "Processor: Apple M2 chip",
+        "Storage: 256GB SSD",
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 18 hours of web browsing",
+        "Weight: 1.29 kg"
       ]
     },
     {
       "id": 6,
-      "title": "Mac mini (2022)",
-      "description": "Space Gray",
-      "condition": "⭐⭐⭐⭐",
-      "price": "10000",
+      "title": "MacBook-Pro-14-inch-M3",
+      "description": "Silver",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "30499",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-mac-mini-2022-256gb.jpg",
+      "imageUrl": "assets/images/MacBook-Pro-14-inch-M3.webp",
       "specs": [
+        "Display: Retina display with True Tone",
         "Processor: Apple M2 chip",
-        "Memory: 8GB unified memory",
         "Storage: 256GB SSD",
-        "Ports: Thunderbolt 4, HDMI 2.0, USB-A",
-        "Dimensions: 19.7 x 19.7 x 3.6 cm",
-        "Weight: 1.2 kg"
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 18 hours of web browsing",
+        "Weight: 1.29 kg"
       ]
     },
     {
-      "id": 7,
+      "id": 10,
       "title": "Apple Watch Series 7",
       "description": "Midnight",
       "condition": "⭐⭐⭐⭐",
+      "category": "Apple Watch",
       "price": "6000",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-watch-series-7.jpg",
+      "imageUrl": "assets/images/apple-watch.webp",
       "specs": [
         "Display: Always-On Retina display",
         "Chip: S7 SiP with 64-bit dual-core processor",
@@ -120,13 +181,14 @@
       ]
     },
     {
-      "id": 8,
-      "title": "Apple Watch SE",
+      "id": 11,
+      "title": "Apple Watch Series 8",
       "description": "Space Gray",
       "condition": "⭐⭐⭐⭐",
+      "category": "Apple Watch",
       "price": "4000",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-watch-se.jpg",
+      "imageUrl": "assets/images/apple-watch-series8.webp",
       "specs": [
         "Display: Retina LTPO OLED display",
         "Chip: S5 SiP with 64-bit dual-core processor",
@@ -137,13 +199,14 @@
       ]
     },
     {
-      "id": 9,
-      "title": "Apple Watch Series 3",
+      "id": 12,
+      "title": "Apple Watch Series 9",
       "description": "Silver Aluminum",
       "condition": "⭐⭐⭐",
+      "category": "Apple Watch",
       "price": "2500",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-watch-series-3.jpg",
+      "imageUrl": "assets/images/apple-watch-series9.png",
       "specs": [
         "Display: Retina display",
         "Chip: S3 SiP with dual-core processor",
