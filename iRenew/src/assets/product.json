@@ -7,7 +7,7 @@
       "condition": "⭐⭐⭐⭐⭐",
       "price": "9000",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-iphone-13-pro-128gb-6.1.jpg",
+      "imageUrl": "assets/images/iphone15-red.jpeg",
       "specs": [
         "Display: Super Retina XDR display",
         "Processor: A15 Bionic chip",
@@ -24,7 +24,7 @@
       "condition": "⭐⭐⭐⭐⭐",
       "price": "7500",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-iphone-13-128gb-6.1.jpg",
+      "imageUrl": "assets/images/iphone_14_pro_max_gold.webp",
       "specs": [
         "Display: Super Retina XDR display",
         "Processor: A15 Bionic chip",
@@ -36,12 +36,12 @@
     },
     {
       "id": 3,
-      "title": "iPhone SE (2022)",
-      "description": "Product(RED)",
+      "title": "iPhone 12",
+      "description": "Product(White)",
       "condition": "⭐⭐⭐",
       "price": "5000",
       "currency": "R",
-      "imageUrl": "https://www.tradeinn.com/f/13735/137354156/apple-iphone-se-2022-128gb-4.7.jpg",
+      "imageUrl": "assets/images/iphone12.webp",
       "specs": [
         "Display: Retina HD display",
         "Processor: A15 Bionic chip",

@@ -1,4 +1,4 @@
-<div *ngFor="let product of products" class="product">
+<!-- <div *ngFor="let product of products" class="product">
   <img
     [src]="product.imageUrl"
     width="150"
@@ -9,7 +9,33 @@
     <h2>{{ product.title }}</h2>
     <p>{{ product.description }}</p>
     <p>Condition: {{ product.condition }}</p>
-    <p>Price: {{ product.currency }} {{ product.price }} </p>
+    <p>Price: {{ product.currency }} {{ product.price }}</p>
+  </div>
+</div> -->
+
+<div
+  *ngFor="let product of products"
+  class="row row-cols-1 row-cols-md-3 g-4"
+  id="products-cards"
+>
+  <div class="col">
+    <div class="card h-100">
+      <img
+        [src]="product.imageUrl"
+        width="150"
+        alt="{{ product.title }}"
+        class="product-image"
+      />
+      <div class="card-body product-details">
+        <h2>{{ product.title }}</h2>
+        <p>{{ product.description }}</p>
+        <p>Condition: {{ product.condition }}</p>
+        <p>Price: {{ product.currency }} {{ product.price }}</p>
+        <button href="#" type="button" class="btn btn-dark shop-button">
+          Add to cart
+        </button>
+        <p class="card-text"></p>
+      </div>
+    </div>
   </div>
 </div>
-
