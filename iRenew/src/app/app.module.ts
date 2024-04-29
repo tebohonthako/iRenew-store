@@ -14,6 +14,7 @@ import { LandingPageComponent } from './pages/landing-page/landing-page.componen
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 
 
 
@@ -26,7 +27,8 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterPageComponent,  
     LandingPageComponent, 
     CheckoutPageComponent, 
-    ProdutsPageComponent  
+    ProdutsPageComponent, 
+    ConfirmationPageComponent  
 
   ],
   imports: [
