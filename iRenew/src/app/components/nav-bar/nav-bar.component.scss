@@ -11,14 +11,16 @@ body {
 
 .navbar {
     background-color: black;
+    height: 3.5rem;
     
 }
 .logo-text, .logo-image {
     color: white;
     text-decoration: none;
+      
 }
 .logo-image {
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .cart-icon {
     margin-left: 700px;
@@ -36,5 +38,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 0.5rem;
     
 }

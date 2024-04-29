@@ -1,0 +1,219 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "title": "iPhone 13 Pro",
+      "description": "Graphite",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "iPhones",
+      "price": "9000",
+      "currency": "R",
+      "imageUrl": "assets/images/iphone15-red.jpeg",
+      "specs": [
+        "Display: Super Retina XDR display",
+        "Processor: A15 Bionic chip",
+        "Camera System: Pro 12MP camera system with Ultra Wide, Wide, and Telephoto cameras",
+        "Face ID: Enabled for secure authentication",
+        "Battery Life: Up to 22 hours of talk time",
+        "Water Resistance: Rated IP68 (maximum depth of 6 meters up to 30 minutes)"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "iPhone 13",
+      "description": "Midnight",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "iPhones",
+      "price": "7500",
+      "currency": "R",
+      "imageUrl": "assets/images/iphone_14_pro_max_gold.webp",
+      "specs": [
+        "Display: Super Retina XDR display",
+        "Processor: A15 Bionic chip",
+        "Camera System: Dual 12MP camera system with Ultra Wide and Wide cameras",
+        "Face ID: Enabled for secure authentication",
+        "Battery Life: Up to 19 hours of talk time",
+        "Water Resistance: Rated IP68 (maximum depth of 6 meters up to 30 minutes)"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "iPhone 12",
+      "description": "Product(White)",
+      "condition": "⭐⭐⭐",
+      "category": "iPhones",
+      "price": "5000",
+      "currency": "R",
+      "imageUrl": "assets/images/iphone12.webp",
+      "specs": [
+        "Display: Retina HD display",
+        "Processor: A15 Bionic chip",
+        "Camera System: 12MP Wide camera",
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 15 hours of video playback",
+        "Water Resistance: Not specified"
+      ]
+    },
+    {
+      "id": 7,
+      "title": "MacBook Air (2022)",
+      "description": "Silver",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "iPhones",
+      "price": "12000",
+      "currency": "R",
+      "imageUrl": "assets/images/macbook air 2022.png",
+      "specs": [
+        "Display: Retina display with True Tone",
+        "Processor: Apple M2 chip",
+        "Storage: 256GB SSD",
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 18 hours of web browsing",
+        "Weight: 1.29 kg"
+      ]
+    },
+    {
+      "id": 8,
+      "title": "MacBook Pro (2022)",
+      "description": "Space Gray",
+      "condition": "⭐⭐⭐⭐",
+      "category": "iPhones",
+      "price": "15000",
+      "currency": "R",
+      "imageUrl": "assets/images/macbook pro 2022.webp",
+      "specs": [
+        "Display: Liquid Retina XDR display",
+        "Processor: Apple M2 Pro chip",
+        "Storage: 512GB SSD",
+        "Touch Bar: Enabled",
+        "Battery Life: Up to 17 hours of web browsing",
+        "Weight: 1.4 kg"
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Mac mini (2022)",
+      "description": "Space Gray",
+      "condition": "⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "10000",
+      "currency": "R",
+      "imageUrl": "assets/images/macbook air 2017.jpeg",
+      "specs": [
+        "Processor: Apple M2 chip",
+        "Memory: 8GB unified memory",
+        "Storage: 256GB SSD",
+        "Ports: Thunderbolt 4, HDMI 2.0, USB-A",
+        "Dimensions: 19.7 x 19.7 x 3.6 cm",
+        "Weight: 1.2 kg"
+      ]
+    },
+    {
+      "id": 4,
+      "title": "MacBook Air 15-inch M3",
+      "description": "Silver",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "25000",
+      "currency": "R",
+      "imageUrl": "assets/images/macbook_air_15_M3.webp",
+      "specs": [
+        "Display: Retina display with True Tone",
+        "Processor: Apple M2 chip",
+        "Storage: 256GB SSD",
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 18 hours of web browsing",
+        "Weight: 1.29 kg"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "MacBook Air 13-inch M1",
+      "description": "Silver",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "12999",
+      "currency": "R",
+      "imageUrl": "assets/images/macbooair-m1-13inch.webp",
+      "specs": [
+        "Display: Retina display with True Tone",
+        "Processor: Apple M2 chip",
+        "Storage: 256GB SSD",
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 18 hours of web browsing",
+        "Weight: 1.29 kg"
+      ]
+    },
+    {
+      "id": 6,
+      "title": "MacBook-Pro-14-inch-M3",
+      "description": "Silver",
+      "condition": "⭐⭐⭐⭐⭐",
+      "category": "Macbooks",
+      "price": "30499",
+      "currency": "R",
+      "imageUrl": "assets/images/MacBook-Pro-14-inch-M3.webp",
+      "specs": [
+        "Display: Retina display with True Tone",
+        "Processor: Apple M2 chip",
+        "Storage: 256GB SSD",
+        "Touch ID: Enabled for secure authentication",
+        "Battery Life: Up to 18 hours of web browsing",
+        "Weight: 1.29 kg"
+      ]
+    },
+    {
+      "id": 10,
+      "title": "Apple Watch Series 7",
+      "description": "Midnight",
+      "condition": "⭐⭐⭐⭐",
+      "category": "Apple Watch",
+      "price": "6000",
+      "currency": "R",
+      "imageUrl": "assets/images/apple-watch.webp",
+      "specs": [
+        "Display: Always-On Retina display",
+        "Chip: S7 SiP with 64-bit dual-core processor",
+        "Health Sensors: Blood oxygen sensor, ECG app, High and low heart rate notifications",
+        "Water Resistance: 50 meters",
+        "Battery Life: Up to 18 hours",
+        "GPS: Built-in GPS, GLONASS, Galileo, and QZSS"
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Apple Watch Series 8",
+      "description": "Space Gray",
+      "condition": "⭐⭐⭐⭐",
+      "category": "Apple Watch",
+      "price": "4000",
+      "currency": "R",
+      "imageUrl": "assets/images/apple-watch-series8.webp",
+      "specs": [
+        "Display: Retina LTPO OLED display",
+        "Chip: S5 SiP with 64-bit dual-core processor",
+        "Health Sensors: Heart rate sensor, accelerometer, gyroscope",
+        "Water Resistance: 50 meters",
+        "Battery Life: Up to 18 hours",
+        "GPS: Built-in GPS, GLONASS, Galileo, and QZSS"
+      ]
+    },
+    {
+      "id": 12,
+      "title": "Apple Watch Series 9",
+      "description": "Silver Aluminum",
+      "condition": "⭐⭐⭐",
+      "category": "Apple Watch",
+      "price": "2500",
+      "currency": "R",
+      "imageUrl": "assets/images/apple-watch-series9.png",
+      "specs": [
+        "Display: Retina display",
+        "Chip: S3 SiP with dual-core processor",
+        "Health Sensors: Heart rate sensor, accelerometer, gyroscope",
+        "Water Resistance: 50 meters",
+        "Battery Life: Up"
+      ]
+    }
+  ]
+}
