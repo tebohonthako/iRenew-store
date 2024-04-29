@@ -1,9 +1,3 @@
-body {
-
-    margin-bottom: 10px;
-    position: fixed;
-}
-
 .navbar-brand {
     margin-left: 100px;
     
@@ -12,6 +6,7 @@ body {
 .navbar {
     background-color: black;
     height: 3.5rem;
+    color: white;
     
 }
 .logo-text, .logo-image {
@@ -39,5 +34,27 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 0.5rem;
-    
 }
+.myicons {
+    margin-right: 15rem;
+}
+
+.a
+{
+    color: white;
+}
+
+.navbar-nav .nav-link.show {
+    color: #f8f9fa;
+}
+.LOGIN1 {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #FFF;
+}
+
+
+// p
+// {
+//     color: red;
+// }
