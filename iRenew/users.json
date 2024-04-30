@@ -3,14 +3,14 @@
         {
           "id": 1,
           "name": "Nonfundo Luthuli",
-          "email": "nomfundo.luthuli2706@gmail.com",
-          "password": "TeamA#1"
+          "email": "nomfundo.luthuli@gmail.com",
+          "password": "123"
         },
         {
           "id": 2,
           "name": "Noorun Abdullah",
-          "email": "noorunabdullah29@gmail.com",
-          "password": "TeamA#2"
+          "email": "noorunabdullah@gmail.com",
+          "password": "123"
         },
         {
           "id": 3,
@@ -21,15 +21,17 @@
         {
             "id": 4,
             "name": "Katlego Makoti",
-            "email": "katlegomakoti07@gmail.com",
+            "email": "katlegomakoti@gmail.com",
             "password":"TeamA#4"
         },
         {
             "id": 5,
             "name": "Andile Msomi",
-            "email": "andile.msomi64@gmail.com",
+            "email": "andile.msomi@gmail.com",
             "password":"TeamA#5"
     
         }
+      
+      
          ]
     }
