@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
+import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,8 @@ const routes: Routes = [
   { path: 'profile', component: ProfilePageComponent },
 
   { path: 'products', component: ProdutsPageComponent },
+
+  { path: 'confirmation', component: ConfirmationPageComponent },
 
  
 

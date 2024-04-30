@@ -10,6 +10,19 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <title>Login Page</title>
+    <script>
+        function login() {
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Here you might perform validation and send data to a server for authentication
+            // For simplicity, let's just log the values for now
+            console.log("Username:", username);
+            console.log("Password:", password);
+        }
+    </script>
+
   </head>
   <body>
     <div class="full-container">
@@ -53,8 +66,10 @@
                 </div>
               </div>
             </div>
-            <button type="button" class="btn btn-dark register-button">
-              Register
+            <button type="submit" class="btn btn-dark login">
+              LOGIN
+    
+          
             </button>
           </form>
         </div>
@@ -65,12 +80,11 @@
           src="https://img-new.cgtrader.com/items/3573975/9f0cd028d2/apple-iphone-13-mini-pink-3d-model-low-poly-max-obj-fbx-c4d-ma-gltf.jpg"
           alt="pink iphone 13 image"
         />
-      </div>
-    </div>
+        
+  
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-  </body>
-</html>
+
