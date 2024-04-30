@@ -25,12 +25,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem;
+    margin-top: 10rem;
     margin-left: 30rem;
     
 }
 
-.container-register {
+.container-login {
     width: 600px;
     display: flex;
     align-items: center;
@@ -54,19 +54,19 @@
     font-size: 10px;
     margin-top: 4px;
 }
-.form-register {
+.form-login {
     margin-top: 50px;
 }
 
-#inputName, #inputEmail, #inputPassword{
+ #inputEmail, #inputPassword{
     border-radius: 8px;
     padding: 10px;
     width: 400px;
     border: 0.2px solid rgb(215, 210, 210);
-    color: rgb(213, 210, 210);
+    color: rgb(21, 20, 20);
 
 }
-.register-button{
+.login-button{
     border-radius: 10px;
     padding: 10px;
     width: 250px;

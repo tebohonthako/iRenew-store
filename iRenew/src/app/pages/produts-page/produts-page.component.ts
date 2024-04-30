@@ -17,6 +17,7 @@ export class ProdutsPageComponent implements OnInit  {
   ngOnInit(): void {
     this.productService.getProducts().subscribe((data: any) => {
       this.products = data.product; // Extract the array from the "product" key
+      console.log(data.product)
     });
   }
 }

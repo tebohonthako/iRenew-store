@@ -1,0 +1,78 @@
+
+.container {
+    width: 50%;
+    margin-top: 100px;
+    
+    
+}
+
+
+
+#envelope{
+    padding-bottom: 10px;
+    width: 80%;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+     align-items: center; /* Align items vertically */
+     overflow: hidden;
+       
+}
+
+#iphone-pink {
+    width: 100px;
+    height: auto;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 10rem;
+    float: right;
+    
+}
+.enlarged {
+    width: 1100px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.container-register {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+
+}
+.full-container{
+    display: inline flex; //creates a separation between 2 containers
+    margin-top: 100px;
+}
+.form-container {
+    margin-top: 120px;
+    margin-left: 300px;
+    
+    
+}
+.confirmation-heading {
+    font-size: 30px;
+}
+.create-acc-subhead {
+    font-size: 10px;
+    margin-left: 10px; /* Adjust spacing between image and contact info */
+}
+.form-register {
+    margin-top: 50px;
+}
+
+.bi-envelope {
+    margin-left: 200px;
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 300px;
+    height: 300px;
+    padding: none;
+    overflow: hidden;
+    position: absolute;
+}
+
+
