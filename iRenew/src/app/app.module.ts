@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './components/nav-bar/nav-bar.component';
-import { BillingPageComponent } from './pages/billing-page/billing-page.component';
 
 import { LoginComponent } from './pages/login/login.component';
 
@@ -15,6 +14,10 @@ import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.compo
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
+import { BillingPageComponent } from './pages/billing-page/billing-page.component';
+import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 
 
 
@@ -28,12 +31,14 @@ import { ConfirmationPageComponent } from './pages/confirmation-page/confirmatio
     LandingPageComponent, 
     CheckoutPageComponent, 
     ProdutsPageComponent, 
-    ConfirmationPageComponent  
+    ConfirmationPageComponent,
+    ProfilePageComponent
 
   ],
   imports: [
     BrowserModule, 
     AppRoutingModule,
+    CommonModule, RouterLink, RouterLinkActive, RouterOutlet,
     HttpClientModule
     
   ],

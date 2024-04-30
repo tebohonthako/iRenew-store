@@ -6,5 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile-page.component.scss']
 })
 export class ProfilePageComponent {
-
+delete() {
+throw new Error('Method not implemented.');
 }
+ 
+}
+
