@@ -8,13 +8,13 @@ import { BillingPageComponent } from './pages/billing-page/billing-page.componen
 
 import { LoginComponent } from './pages/login/login.component';
 
-
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -34,7 +34,9 @@ import { ConfirmationPageComponent } from './pages/confirmation-page/confirmatio
   imports: [
     BrowserModule, 
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
     
   ],
   providers: [],

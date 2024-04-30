@@ -18,7 +18,7 @@
           <h1 class="sign-up-heading">SIGN UP</h1>
           <p class="create-acc-subhead">CREATE AN ACCOUNT TO GET STARTED</p>
 
-          <form class="form-register">
+          <form class="form-register" [formGroup]="Register" (ngSubmit)="register()">
             <div class="mb-3">
               <div class="name">
                 <input
