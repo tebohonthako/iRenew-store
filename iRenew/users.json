@@ -1,88 +1,35 @@
-{
-  "registerUsers": [
-    {
-      "id": 1,
-      "name": "Nonfundo Luthuli",
-      "email": "nomfundo.luthuli@gmail.com",
-      "password": "1111"
-    },
-    {
-      "id": 2,
-      "name": "Noorun Abdullah",
-      "email": "noorunabdullah@gmail.com",
-      "password": "2222"
-    },
-    {
-      "id": 3,
-      "name": "Teboho Nthako",
-      "email": "tjaynthako@gmail.com",
-      "password": "3333"
-    },
-    {
-      "id": 4,
-      "name": "Katlego Makoti",
-      "email": "katlegomakoti@gmail.com",
-      "password": "4444"
-    },
-    {
-      "id": 5,
-      "name": "Andile Msomi",
-      "email": "andile.msomi@gmail.com",
-      "password": "5555"
-    },
-    {
-      "id": "3bc8",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "12f1",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "5cdc",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "4843",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "d9a9",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "c506",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "70d8",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "1401",
-      "name": "blue",
-      "email": "blue@com.coz",
-      "password": "12345"
-    },
-    {
-      "id": "bbf1",
-      "name": "",
-      "email": "",
-      "password": ""
+{"users":[
+    
+        {
+          "id": 1,
+          "name": "Nonfundo Luthuli",
+          "email": "nomfundo.luthuli2706@gmail.com",
+          "password": "TeamA#1"
+        },
+        {
+          "id": 2,
+          "name": "Noorun Abdullah",
+          "email": "noorunabdullah29@gmail.com",
+          "password": "TeamA#2"
+        },
+        {
+          "id": 3,
+          "name": "Teboho Nthako",
+          "email": "tjaynthako@gmail.com",
+          "password": "TeamA#3"
+        },
+        {
+            "id": 4,
+            "name": "Katlego Makoti",
+            "email": "katlegomakoti07@gmail.com",
+            "password":"TeamA#4"
+        },
+        {
+            "id": 5,
+            "name": "Andile Msomi",
+            "email": "andile.msomi64@gmail.com",
+            "password":"TeamA#5"
+    
+        }
+         ]
     }
-  ]
-}
