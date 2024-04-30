@@ -1,19 +1,27 @@
-
-body{
+*{
     margin: 0;
-    padding: 0;  
+    padding: 0;
+    box-sizing: border-box;
+    
     font-family: "Cabin", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     font-variation-settings:
-      "wdth" 100; 
-      
+      "wdth" 100;   
+
+}
+body{
+    margin: 0;
+    padding: 0;  
+}
+a {
+    text-decoration: none;
 }
 :root {
     ---bg: white;
-    
 }
+
 
 
 
