@@ -48,19 +48,32 @@
       <img
         src="assets\images\mac-reviewbag.png"
         alt="laptop"
-        width="150"
+        width="120"
         id="product-pic"
       />
-      <div class="product-specs">
-        <h1 class="product-name">Macbook Pro 2017</h1>
-        <span>White</span><br />
-        <span class="">Model: A1708</span>
+      <div *ngFor="let product of products" class="product-specs">
+        <h1 class="product-name">{{ product.title }}</h1>
+        <span>{{ product.description }}</span><br />
+        <span>Price: {{ product.price }} {{ product.currency }}</span><br />
         <br />
-        R 9 500
+        <img [src]="product.imageUrl" [alt]="product.title" width="150">
+        
       </div>
     </div>
-    <!-- O R D E R S U M M A R Y S I D E B A R -->
-    <div class="order-sum-sidebar"></div>
+    <!-- O R D E R   S U M M A R Y   S I D E B A R -->
+    <div class="order-summary-sidebar">
+      <div class="order-summary-container">
+        <h6>Order Summary</h6>
+        <p>Items: R {{ total }}</p>
+        <p>Shipping: R 0.00</p>
+        <p>Gift card: R 0.00</p>
+        <hr>
+        <p class="order-total">T O T A L: $ {{ total }}</p>
+        <hr>
+        <button routerLink="/confirmation" class="place-order-button" (click)="placeOrder()">Place your order</button>
+      </div>
+      <a routerLink="/">
+        <button class='back-btn'>Back</button>
+      </a>
 
-    <!-- N A V B A R   E N D S   H E R E  -->
     
