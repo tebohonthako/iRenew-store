@@ -24,7 +24,7 @@ export class RegisterPageComponent {
   // };
   public Register!: FormGroup;
 
-  api = 'http://localhost:3000/registerUsers'
+  api = 'http://localhost:3000/users'
 
   constructor(
     private formbuilder: FormBuilder,

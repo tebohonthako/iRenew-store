@@ -14,11 +14,7 @@ import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.compo
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
-<<<<<<< HEAD
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-=======
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
->>>>>>> 3bf4866a6f78e18734865108a014291e0943aa4c
 
 
 
@@ -39,13 +35,8 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule, 
     AppRoutingModule,
     HttpClientModule,
-<<<<<<< HEAD
     ReactiveFormsModule,
     FormsModule
-=======
-    FormsModule,
-    ReactiveFormsModule
->>>>>>> 3bf4866a6f78e18734865108a014291e0943aa4c
     
   ],
   providers: [],
