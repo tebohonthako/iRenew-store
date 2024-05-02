@@ -16,15 +16,17 @@
     margin-right: auto;
     display: flex;
      align-items: center; /* Align items vertically */
+     overflow: hidden;
        
 }
 
 #iphone-pink {
-    width: 10rem;
+    width: 100px;
+    height: auto;
     display: center;
     justify-content: center;
     align-items: center;
-    margin-top: 5px;
+    margin-bottom: 100px;
     margin-left: 10rem;
     float: right;
     
@@ -71,10 +73,6 @@
     padding: none;
     overflow: hidden;
     position: absolute;
-    
-
-
-    
 }
 
 
