@@ -6,13 +6,14 @@
           <h1 class="sign-up-heading">SIGN UP</h1>
           <p class="create-acc-subhead">CREATE AN ACCOUNT TO GET STARTED</p>
 
-          <form class="form-register">
+          <form class="form-register" [formGroup]="Register" (ngSubmit)="register()">
             <div class="mb-3">
               <div class="name">
                 <input
-                  type="name"
+                  type="text"
                   class="form-control"
                   id="inputName"
+                  formControlName="name"
                   placeholder="Name"
                 />
               </div>
@@ -21,6 +22,7 @@
               <div class="email">
                 <input
                   type="email"
+                  formControlName="email"
                   class="form-control"
                   id="inputEmail"
                   placeholder="Email"
@@ -32,6 +34,7 @@
                 <input
                   type="password"
                   class="form-control"
+                  formControlName="password"
                   id="inputPassword"
                   placeholder="Password"
                 />

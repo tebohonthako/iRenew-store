@@ -8,7 +8,6 @@ import { BillingPageComponent } from './pages/billing-page/billing-page.componen
 
 import { LoginComponent } from './pages/login/login.component';
 
-
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
@@ -37,8 +36,8 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule, 
     AppRoutingModule,
     HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
     
   ],
   providers: [],

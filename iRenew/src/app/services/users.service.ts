@@ -13,10 +13,11 @@ export class UsersService {
 
   constructor(private http: HttpClient) { }
 
-  
-   get Users(): Observable <Users> {
-    return this.http. get<Users>(this.apiURL);
+  registerUser(userDetails: Users){
+    return this.http.post('${this.apiUrl}/users', userDetails)
   }
+
+  
   
 }
 

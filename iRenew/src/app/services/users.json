@@ -11,7 +11,7 @@
       "name": "Noorun Abdullah",
       "email": "noorunabdullah29@gmail.com",
       "password": "TeamA#2"
-
+    },
     {
       "id": "3",
       "name": "Teboho Nthako",
@@ -31,25 +31,10 @@
       "password": "TeamA#5"
     },
     {
-      "id": "edb6",
-      "name": "Tommy",
-      "email": "tommy@mail.com",
-
-      "email": "andile.msomi@gmail.com",
-      "password": "TeamA#5"
-    },
-    {
-      "id": "90a6",
-      "name": "Tommy",
-      "email": "tommy@mail.com",
-      "password": "12345"
-    },
-    {
-      "id": "3f8f",
-      "name": "Katleho",
-      "email": "Katleho@gmail.com",
-      "password": "hello"
-
+      "id": "db93",
+      "name": "",
+      "email": "",
+      "password": ""
     }
   ]
 }
