@@ -28,7 +28,8 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     LandingPageComponent, 
     CheckoutPageComponent, 
     ProdutsPageComponent, 
-    ConfirmationPageComponent  
+    ConfirmationPageComponent,
+      
 
   ],
   imports: [
