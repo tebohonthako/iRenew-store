@@ -222,14 +222,12 @@
       "name": "Nonfundo Luthuli",
       "email": "nomfundo.luthuli2706@gmail.com",
       "password": "TeamA#1"
-
     },
     {
       "id": "2",
       "name": "Noorun Abdullah",
       "email": "noorunabdullah29@gmail.com",
       "password": "TeamA#2"
-
     },
     {
       "id": "3",
@@ -241,7 +239,6 @@
       "id": "4",
       "name": "Katlego Makoti",
       "email": "katlegomakoti07@gmail.com",
-
       "password": "TeamA#4"
     },
     {
@@ -262,7 +259,6 @@
       "password": "12345"
     },
     {
-
       "id": "9e79",
       "name": "test",
       "email": "test1@gmail.com",
@@ -291,7 +287,24 @@
       "name": ".",
       "email": "hey@",
       "password": "ll"
-
+    },
+    {
+      "id": "b26d",
+      "name": "Jaz",
+      "email": "Jaz@outlook.com",
+      "password": "Gos"
+    },
+    {
+      "id": "f91c",
+      "name": "JazmineN",
+      "email": "jazminen@gmail.com",
+      "password": "1234Jaz"
+    },
+    {
+      "id": "439e",
+      "name": "nunu",
+      "email": "nunu@gmail.com",
+      "password": "jesus"
     }
   ]
 }
