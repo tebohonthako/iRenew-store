@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profile-page',
@@ -6,9 +9,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./profile-page.component.scss']
 })
 export class ProfilePageComponent {
-delete() {
-throw new Error('Method not implemented.');
-}
- 
+
+public Profile!: FormGroup;
+
+api = 'http://localhost:3000/users'
+
+
+constructor (
+  private formGroup: FormGroup,
+  private http: HttpClient,
+  private router: Router
+  ) {}
+
 }
 
