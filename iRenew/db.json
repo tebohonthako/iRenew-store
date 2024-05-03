@@ -271,40 +271,26 @@
       "password": "12345"
     },
     {
-      "id": "3d53",
-      "name": "Jazmine",
-      "email": "Jazmine@gmail.com",
+      "id": "641d",
+      "StreetNumber": "1",
+      "StreetName": "",
+      "Suburb": "cresta",
+      "CityorProvince": "johanessburg",
+      "PostalCode": "2094"
+    },
+    {
+      "id": "aac0",
+      "name": "nana",
+      "email": "nana@gmail.com",
       "password": "1234"
     },
     {
-      "id": "6a0c",
-      "name": "nu",
-      "email": "nu@gmail.com",
-      "password": "#1Sh"
-    },
-    {
-      "id": "1e31",
-      "name": ".",
-      "email": "hey@",
-      "password": "ll"
-    },
-    {
-      "id": "b26d",
-      "name": "Jaz",
-      "email": "Jaz@outlook.com",
-      "password": "Gos"
-    },
-    {
-      "id": "f91c",
-      "name": "JazmineN",
-      "email": "jazminen@gmail.com",
-      "password": "1234Jaz"
-    },
-    {
-      "id": "439e",
-      "name": "nunu",
-      "email": "nunu@gmail.com",
-      "password": "jesus"
+      "id": "20af",
+      "StreetNumber": "1",
+      "StreetName": "",
+      "Suburb": "cresta",
+      "CityorProvince": "johanessburg",
+      "PostalCode": "2094"
     }
-  ]
-}
+    
+    }
