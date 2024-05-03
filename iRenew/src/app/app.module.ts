@@ -33,7 +33,7 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProdutsPageComponent, 
     ConfirmationPageComponent,
     ProfilePageComponent
-    ConfirmationPageComponent,
+   
       
 
   ],
@@ -41,13 +41,14 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     BrowserModule, 
     AppRoutingModule,
     CommonModule, RouterLink, RouterLinkActive, RouterOutlet,
-    HttpClientModule
+
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    
     
   ],
-  providers: [FormGroup],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

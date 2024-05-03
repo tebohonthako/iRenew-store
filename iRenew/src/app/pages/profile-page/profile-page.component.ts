@@ -10,13 +10,13 @@ import { Router } from '@angular/router';
 })
 export class ProfilePageComponent {
 
-public Profile!: FormGroup;
+//public Profile!: FormGroup;
 
 api = 'http://localhost:3000/users'
 
 
 constructor (
-  private formGroup: FormGroup,
+ // private formGroup: FormGroup,
   private http: HttpClient,
   private router: Router
   ) {}
