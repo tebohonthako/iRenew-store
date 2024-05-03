@@ -19,3 +19,4 @@ describe('LoginComponent', () => {
     expect(component).toBeTruthy();
   });
 });
+var element = document.getElementById('yourElementId');

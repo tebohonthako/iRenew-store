@@ -9,7 +9,7 @@ import { Product } from '../interface/product.model';
 
 // <!-- Creating a service to fetch the product data from the JSON file using HttpClient-->
 export class ProductService {
-  private apiURL = 'assets/product.json';
+  private apiURL = 'assets/products.json';
 
   constructor(private http: HttpClient) { }
 

@@ -7,7 +7,6 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 import { LoginComponent } from './pages/login/login.component';
 
-
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
@@ -18,6 +17,7 @@ import { BillingPageComponent } from './pages/billing-page/billing-page.componen
 import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
+import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -33,6 +33,8 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
     ProdutsPageComponent, 
     ConfirmationPageComponent,
     ProfilePageComponent
+    ConfirmationPageComponent,
+      
 
   ],
   imports: [
@@ -40,9 +42,12 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
     AppRoutingModule,
     CommonModule, RouterLink, RouterLinkActive, RouterOutlet,
     HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
     
   ],
-  providers: [],
+  providers: [FormGroup],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
