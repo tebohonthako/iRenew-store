@@ -53,7 +53,7 @@ export class RegisterPageComponent {
 
         this.Register.reset();
 
-        this.router.navigate(['/landing']);
+        this.router.navigate(['/login']);
       },
       (error) => {
         alert('something went wrong');
