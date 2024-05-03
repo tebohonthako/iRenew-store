@@ -222,12 +222,14 @@
       "name": "Nonfundo Luthuli",
       "email": "nomfundo.luthuli2706@gmail.com",
       "password": "TeamA#1"
+
     },
     {
       "id": "2",
       "name": "Noorun Abdullah",
       "email": "noorunabdullah29@gmail.com",
       "password": "TeamA#2"
+
     },
     {
       "id": "3",
@@ -239,6 +241,7 @@
       "id": "4",
       "name": "Katlego Makoti",
       "email": "katlegomakoti07@gmail.com",
+
       "password": "TeamA#4"
     },
     {
@@ -249,11 +252,17 @@
     },
     {
       "id": "edb6",
+      "email": "andile.msomi@gmail.com",
+      "password": "TeamA#5"
+    },
+    {
+      "id": "90a6",
       "name": "Tommy",
       "email": "tommy@mail.com",
       "password": "12345"
     },
     {
+
       "id": "9e79",
       "name": "test",
       "email": "test1@gmail.com",
