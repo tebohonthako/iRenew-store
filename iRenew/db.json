@@ -264,6 +264,63 @@
       "name": "Angelina",
       "email": "angel@mail.com",
       "password": "12345"
+    },
+    {
+      "id": "641d",
+      "StreetNumber": "1",
+      "StreetName": "",
+      "Suburb": "cresta",
+      "CityorProvince": "johanessburg",
+      "PostalCode": "2094"
+    },
+    {
+      "id": "aac0",
+      "name": "nana",
+      "email": "nana@gmail.com",
+      "password": "1234"
+    },
+    {
+      "id": "20af",
+      "StreetNumber": "1",
+      "StreetName": "",
+      "Suburb": "cresta",
+      "CityorProvince": "johanessburg",
+      "PostalCode": "2094"
+    },
+    {
+      "id": "bacb",
+      "StreetNumber": "2",
+      "StreetName": "",
+      "Suburb": "South Gate",
+      "CityorProvince": "Johanessburg",
+      "PostalCode": "2094"
+    },
+    {
+      "id": "5331",
+      "StreetNumber": "",
+      "StreetName": "",
+      "Suburb": "",
+      "CityorProvince": "",
+      "PostalCode": ""
+    }
+  ],
+  "adrress": [
+    {
+      "id": 1,
+      "street no": "20",
+      "street name": "Fox",
+      "suburb": "Cresta",
+      "city or province": "Johanessburg",
+      "postal code": "2194"
+    }
+  ],
+  "billing infomation": [
+    {
+      "Account holder first name": "Nonfundo",
+      "Account holder last name": "Luthuli",
+      "Bank": "Absa",
+      "Card number": "1234 1234 1234",
+      "CCV": "123"
     }
   ]
 }

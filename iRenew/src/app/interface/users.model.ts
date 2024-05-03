@@ -5,3 +5,10 @@ export interface Users {
     password: string;
   
   }
+ // export interface Adrress 
+   // id: number;
+  //  street no: string;
+    //street name; string;
+
+
+  
