@@ -9,7 +9,6 @@ import { ProdutsPageComponent } from './pages/produts-page/produts-page.componen
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 import { BillingPageComponent } from './pages/billing-page/billing-page.component';
 
-
 const routes: Routes = [
 
   { path: '', redirectTo: '/landing', pathMatch: 'full' }, // redirect to `first-component or landing page`
@@ -24,7 +23,9 @@ const routes: Routes = [
 
   { path: 'checkout', component: CheckoutPageComponent },
 
-  { path: 'profile', component: ProfilePageComponent },
+  { path: 'profile', component: ProfilePageComponent},
+  { path: 'profile/:id', component: ProfilePageComponent },
+
 
   { path: 'products', component: ProdutsPageComponent },
 

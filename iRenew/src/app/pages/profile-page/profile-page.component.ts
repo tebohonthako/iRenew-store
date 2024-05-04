@@ -1,7 +1,6 @@
-
-
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-profile-page',
@@ -10,17 +9,26 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class ProfilePageComponent implements OnInit {
-  Users: any;
+  User: any;
+  UserId: number;
 
 
-constructor (private http: HttpClient) {}
+constructor (private http: HttpClient,private route: ActivatedRoute) {
+  this.UserId =0;
+}
   
 
 ngOnInit(){
-  this.http.get('assets/users.json')
-    .subscribe((res: any) => {
-      console.log(res);
-      this.Users = res}
+
+   this.route.params.subscribe(params => {
+     this.UserId = + params['id'];
+   });
+
+
+  this.http.get('assets/users.json').subscribe((res: any) => {
+      this.User = res[Object.keys(res)[0]].find((e:any)=> e.id == this.UserId);
+      console.log(this.User);}
+      
     );
 }
 
