@@ -1,25 +1,29 @@
+
+
 import { HttpClient } from '@angular/common/http';
-import { Component } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-profile-page',
   templateUrl: './profile-page.component.html',
   styleUrls: ['./profile-page.component.scss']
 })
-export class ProfilePageComponent {
 
-//public Profile!: FormGroup;
-
-api = 'http://localhost:3000/users'
+export class ProfilePageComponent implements OnInit {
+  Users: any;
 
 
-constructor (
- // private formGroup: FormGroup,
-  private http: HttpClient,
-  private router: Router
-  ) {}
+constructor (private http: HttpClient) {}
+  
+
+ngOnInit(){
+  this.http.get('assets/users.json')
+    .subscribe((res: any) => {
+      console.log(res);
+      this.Users = res}
+    );
+}
+
 
 }
 
