@@ -1,5 +1,6 @@
 h3 {
   text-align: center;
+  
 }
 
 p {
@@ -12,9 +13,17 @@ p {
 input {
   padding: 2px;
   margin: 7px;
+  width: 90%;
+  border: transparent;
 }
 .icon {
   float: right;
+  width: 12%;
+  
+  &:hover {
+    cursor: pointer;
+    
+  }
 
   
 }
@@ -30,7 +39,16 @@ input {
 
   h4 {
     text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
+  
   .container2 {
+    margin-top:10rem ;
+  }
+
+  .container3 {
     margin-top: 10rem;
   }

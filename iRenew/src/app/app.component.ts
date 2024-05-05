@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { BillingPageComponent} from './pages/billing-page/billing-page.component';
 
 @Component({
   selector: 'app-root',

@@ -37,7 +37,7 @@ login()
           alert('Successfully Logged in');
           this.isLoggedIn =true; 
           this.loginForm.reset();
-          this.router.navigate(["/landing"])
+          this.router.navigate(["/profile/"+user.id])
         }
         else
         {
