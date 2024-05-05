@@ -8,13 +8,16 @@ import { Router } from '@angular/router';
   styleUrls: ['./checkout-page.component.scss']
 })
 export class CheckoutPageComponent implements OnInit {
+calculateSubtotal(): string|number {
+throw new Error('Method not implemented.');
+}
   products: any[] = [];
   total: number = 0;
 
   constructor(private http: HttpClient, private router: Router) { }
 
   ngOnInit(): void {
-    this.http.get<any>('assets/products.json').subscribe(data => {
+    this.http.get<any>('products.json').subscribe(data => {
       this.products = data;
       this.calculateTotal();
     });
@@ -29,6 +32,6 @@ export class CheckoutPageComponent implements OnInit {
   placeOrder(): void {
     // Implement your logic for placing the order here
     // For now, just navigate to the success page
-    this.router.navigate(['/ordersuccess']);
+    this.router.navigate(['/confirmation']);
   }
 }

@@ -68,9 +68,11 @@
         <p>Shipping: R 0.00</p>
         <p>Gift card: R 0.00</p>
         <hr>
-        <p class="order-total">T O T A L: $ {{ total }}</p>
+        <p class="order-total">T O T A L: R {{ total }}</p>
         <hr>
-        <button routerLink="/confirmation" class="place-order-button" (click)="placeOrder()">Place your order</button>
+        <a routerLink="/confirmation">
+          <button routerLink="/confirmation" class="place-order-button" (click)="placeOrder()">Place your order</button>
+        </a>
       </div>
       <a routerLink="/">
         <button class='back-btn'>Back</button>
