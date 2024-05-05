@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Your Cart</h2>
+  <div class="row">
+    <div class="col" *ngFor="let product of cartItems">
+      <div class="card mb-3">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img
+              [src]="product.imageUrl"
+              alt="{{ product.title }}"
+              class="img-fluid rounded-start"
+            />
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">{{ product.title }}</h5>
+              <p class="card-text">
+                {{ product.currency }} {{ product.price }}
+              </p>
+              <div class="input-group mb-3">
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  (click)="decreaseQuantity(product)"
+                >
+                  -
+                </button>
+                <input
+                  type="text"
+                  class="form-control"
+                  [(ngModel)]="product.quantity"
+                  readonly
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  (click)="increaseQuantity(product)"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Subtotal Counter -->
+  <div class="row">
+    <div class="col">
+      <p class="subtotal">Subtotal: {{ calculateSubtotal() }}</p>
+    </div>
+    <div class="col">
+      <a href="" class="check-user-out" routerLink="/checkout">
+        <button class="btn btn-dark routerLink=">Checkout</button>
+      </a>
+    </div>
+  </div>
+</div>

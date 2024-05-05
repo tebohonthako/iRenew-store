@@ -8,6 +8,7 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 import { BillingPageComponent } from './pages/billing-page/billing-page.component';
+import { CartPageComponent } from './components/cart-page/cart-page.component';
 
 const routes: Routes = [
 
@@ -32,7 +33,7 @@ const routes: Routes = [
   { path: 'confirmation', component: ConfirmationPageComponent },
 
  
-
+  { path: 'cart', component: CartPageComponent }
   
 //  { path: '**', component: PageNotFoundComponent },  Wildcard route for a 404 page (page not found)
   
