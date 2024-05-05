@@ -24,8 +24,8 @@ const routes: Routes = [
   { path: 'checkout', component: CheckoutPageComponent },
 
   { path: 'profile', component: ProfilePageComponent},
+  
   { path: 'profile/:id', component: ProfilePageComponent },
-
 
   { path: 'products', component: ProdutsPageComponent },
 

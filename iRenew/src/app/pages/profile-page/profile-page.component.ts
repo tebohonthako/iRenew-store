@@ -24,7 +24,6 @@ ngOnInit(){
      this.UserId = + params['id'];
    });
 
-
   this.http.get('assets/users.json').subscribe((res: any) => {
       this.User = res[Object.keys(res)[0]].find((e:any)=> e.id == this.UserId);
       console.log(this.User);}
