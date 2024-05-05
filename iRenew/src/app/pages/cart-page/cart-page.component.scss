@@ -1,38 +1,42 @@
-.container-card{
-    display: flex;
+.cart-container{
+ display: flex;
+ align-items: center;
+ justify-content: space-around;   
+}
+
+span img {
+    width: 4rem;
     position: relative;
-    top: 6rem;
+    right: 13rem;
+    top: 4rem;
+}
+
+.title, .price, .condition{
+    display: flex;
     flex-direction: column;
-    background-color: grey;
-    border-radius: 0.8rem;
-    box-shadow: lightgray;
 }
 
-.image-container{
+.items-container{
+   
+    
+}
+
+button{
+    color: white;
+    background-color: black;
+    width: 12rem;
+    height: 2rem;
+
     position: relative;
-    left: 6rem;
-    top: 5rem;
-}
-
-.details-container span{
+    border-radius: 2rem;
+    
     position: relative;
-    left: 50%;
-    font-size: 1.6rem;
-    margin-bottom: 3rem;
-    top: 10%;
-    display: flex;
+    top: 4rem;
+    left: 75%;
 }
 
-.checkout-section{
-    display: flex;
-    justify-content: space-around;
-    gap: 2rem;
-}
-
-.checkout-section span{
-    font-size: 1.8rem;
-}
-.checkout-section button{
-    padding: 1.2rem;
-    border-radius: 0.8rem;
+.subtotal{
+    position: relative;
+    right: 3rem;
+    top: 4rem;
 }

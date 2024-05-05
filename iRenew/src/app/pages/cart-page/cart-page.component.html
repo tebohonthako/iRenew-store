@@ -1,33 +1,36 @@
-<!-- <div *ngFor="let item of items" class="items-container">
-  
-  <div class = "cart-item">
+<div class = "cart-container" *ngFor = "let product of products">
 
-    <span> <img src={{item.imageUrl}} alt="iphone"></span>
-    <span> {{ item.title }} </span>
+   <div class="items-container">
 
-    <span>Apple</span>
+    
+    <span> <img src="{{product.imageUrl}}" alt=""></span>
+    <span class ="title">{{product.title}}</span>
+    <span class = "price"> {{product.price  | currency}}</span>
+    <span class = "condition"> {{product.condition}}</span>
+    
+    
+   </div>
 
-    <span>{{ item.price }}</span> 
-</div>  -->
-<!-- 
--->
-<div class="container-card">
-
-  <div class = "image-container">
-    <img src="assets/images/iphone_14_pro_max_gold.webp" style="width: 20rem" alt="logo">
-  </div>
-
-  <div class="details-container">
-      <span> iPhone 15 </span> <!--product title-->
-
-      <span> Apple Phone</span>
-
-      <span> R 9000</span> <!-- Product File -->
-  </div>
-
-  <div class="checkout-section">
-     <span> Total: R</span> <!--total price-->
-
-     <button> Checkout </button>
-  </div>
+   
 </div>
+
+<div class="footer">
+    <button>Checkout</button>
+
+ <span class ="subtotal">Subtotal: </span>
+
+
+    <!-- <h2>Your cart</h2>
+    
+    <ul>
+        <li *ngFor = "let item of cartItems">
+            <span> <img src="{{item.imageUrl}}" alt=""></span>
+            <span class ="title">{{item.title}}</span>
+            <span class = "price"> {{item.price  | currency}}</span>
+            <span class = "condition"> {{item.condition}}</span>
+        </li>
+
+        <button>
+            Checkout
+        </button>
+    </ul> -->

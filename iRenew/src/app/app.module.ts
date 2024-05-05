@@ -18,6 +18,7 @@ import { CommonModule } from '@angular/common';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 
 
@@ -32,7 +33,8 @@ import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
     CheckoutPageComponent, 
     ProdutsPageComponent, 
     ConfirmationPageComponent,
-    ProfilePageComponent
+    ProfilePageComponent,
+    CartPageComponent
    
       
 

@@ -8,6 +8,7 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 import { BillingPageComponent } from './pages/billing-page/billing-page.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
 
 const routes: Routes = [
 
@@ -30,6 +31,8 @@ const routes: Routes = [
   { path: 'products', component: ProdutsPageComponent },
 
   { path: 'confirmation', component: ConfirmationPageComponent },
+
+  {path: 'cart', component: CartPageComponent}
 
  
 

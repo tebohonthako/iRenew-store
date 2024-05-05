@@ -8,7 +8,7 @@
           <div class="card-body product-details">
             <p>{{ product.title }}</p>
             <p>Price: {{ product.currency }} {{ product.price }}</p>
-            <button href="#" type="button" class="btn btn-dark shop-button add-to-cart">
+            <button (click)="addToCart(product)" href="#" type="button" class="btn btn-dark shop-button add-to-cart">
               + Add to cart
             </button>
             <p class="card-text"></p>
