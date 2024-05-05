@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">
+    <a class="navbar-brand" routerLink="/">
       <img src="assets/images/irenewlogo.png" alt="irenew logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -9,28 +9,34 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active text-white" aria-current="page" href="#">iRenew</a>
+          <a class="nav-link active text-white" aria-current="page" routerLink="/">iRenew</a>
         </li>
         
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Products
+            Products
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="/products">Shop iPhones</a></li>
-            <li><a class="dropdown-item"  href="#">Shop Macs</a></li>
+            <li><a class="dropdown-item" routerLink="/products">Shop iPhones</a></li>
+            <li><a class="dropdown-item" routerLink="#">Shop Macs</a></li>
             <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">Shop Apple watches</a></li>
+            <li><a class="dropdown-item" routerLink="#">Shop Apple watches</a></li>
           </ul>
         </li>
       </ul>
       <div class="d-flex myicons">
+<<<<<<< HEAD
                
        <a routerLink="/login"class="LOGIN1">Login  </a>
        
        <a routerLink="/register"class="LOGIN1">Register </a>
 
         
+=======
+        <a *ngIf="!isLoggedIn" routerLink="/login" class="LOGIN1">Login</a>
+        <a *ngIf="!isLoggedIn" routerLink="/register" class="LOGIN1">Register</a>
+        <a *ngIf="isLoggedIn" routerLink="/logout" class="LOGIN1">Logout</a>
+>>>>>>> 7cb54f636ad0976bd34f69b34f0062a4244d89ff
       </div>
     </div>
   </div>

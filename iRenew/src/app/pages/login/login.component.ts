@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
+  @Input() public isLoggedIn: boolean = true; 
 
   public loginForm!: FormGroup
 
@@ -34,6 +35,7 @@ login()
         if(user)
         {
           alert('Successfully Logged in');
+          this.isLoggedIn =true; 
           this.loginForm.reset();
           this.router.navigate(["/landing"])
         }

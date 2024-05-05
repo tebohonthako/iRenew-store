@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-
+  isLoggedIn: boolean = false; // Set this to true if user is logged in, false otherwise
 }
+
+
