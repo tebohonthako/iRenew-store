@@ -9,7 +9,7 @@ Then in the terminal 'ng s -o'  to run the application
   
 WHAT IS MISSING FROM THIS APPLICATION: 
 
-1. navBar functionality ( ngif )
+1. navBar functionality ( ngif )   - Teboho
 2. ProductDetails page
 3. checkout page functionality
 4. profile page functionality
