@@ -47,4 +47,9 @@ login()
       {
         alert("Something went wrong");
       })
-    }}
+    }
+    getLoginuser(){
+      return this.getLoginuser;
+      console.log(this.getLoginuser)
+    }
+  }
