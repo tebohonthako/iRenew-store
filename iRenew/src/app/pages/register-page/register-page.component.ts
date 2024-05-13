@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { UsersService } from 'src/app/services/users.service';
 import { Users } from 'src/app/interface/users.model';
 import {
@@ -18,7 +18,7 @@ import { AuthService } from 'src/app/services/auth-service.service';
   styleUrls: ['./register-page.component.scss'],
 })
 
-export class RegisterPageComponent {
+export class RegisterPageComponent implements OnInit{
   
   // formData = {
   // name: '',
@@ -29,20 +29,26 @@ export class RegisterPageComponent {
   private generateNewUserId(): string {
     return uuidv4();
   }
-  api = 'http://localhost:3000/users'
+  api = 'http://localhost:8080/users'
 
   constructor(
     private formbuilder: FormBuilder,
     private http: HttpClient,
     private router: Router,private authService: AuthService
   ) {}
-
+    passwordValidator(){
+      const regex = /[!@#$%^&*(),.?":{}|<>]/;
+      return regex.test(this.Register.get('password')?.value);
+    }
+    passwordValidator2(){
+      return this.Register.get('password')?.errors;
+    }
   ngOnInit(): void 
   {
     this.Register = this.formbuilder.group({
       name: [ '',Validators.required],
-      email: ['', Validators.required],
-      password: ['', Validators.required]
+      email: ['', [Validators.required,Validators.email]],
+      password: ['', [Validators.required,Validators.minLength(8)]],
 
     });
   }
@@ -61,10 +67,12 @@ export class RegisterPageComponent {
 
         //the navigator method accepts an array of route as an argument
 
-        this.Register.reset();
+      
+        console.log("testing email in register page",this.Register.value.email,)
         this.authService.login(this.Register.value.email);
         this.router.navigate(["/profile/"+newUserId]); //testing, routing to profile after registering
         //this.router.navigate(['/login']);
+        this.Register.reset();
       },
       (error) => {
         alert('something went wrong');

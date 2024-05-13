@@ -27,6 +27,8 @@
                   id="inputEmail"
                   placeholder="Email"
                 />
+           
+                <small *ngIf = "Register.get('email')?.errors&&Register.get('email')?.touched" class="comment">Email Invalid</small>
               </div>
             </div>
             <div class="mb-3">
@@ -38,6 +40,8 @@
                   id="inputPassword"
                   placeholder="Password"
                 />
+                <small *ngIf = "passwordValidator||passwordValidator2()&&Register.get('password')?.touched" class="comment">Password must have a special character and be atleast 8 characers long</small>
+                
               </div>
             </div>
             <div class="mb-3">

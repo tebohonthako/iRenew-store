@@ -15,6 +15,7 @@ export class AuthService {
     this.isLoggedIn = true;
     this.loggedInUserEmail = email;
     localStorage.setItem('loggedInUserEmail', email);
+  
     this.authChanged.next(true); // Notify subscribers that authentication state has changed
   }
 

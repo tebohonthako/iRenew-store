@@ -26,7 +26,7 @@ export class LoginComponent {
 
 login()
     {
-      this.http.get<any>("http://localhost:3000/users").subscribe(res=>{
+      this.http.get<any>("http://localhost:8080/users").subscribe(res=>{
         const user = res.find((details:any)=>
         {
           return details.email === this.loginForm.value.email && details.password === this.loginForm.value.password;
