@@ -19,8 +19,8 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
-
-
+import { CategoryComponent } from './pages/category/category.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -34,10 +34,10 @@ import { CartPageComponent } from './components/cart-page/cart-page.component';
     ProdutsPageComponent, 
     ConfirmationPageComponent,
     ProfilePageComponent,
-    CartPageComponent
+    CartPageComponent,
+    CategoryComponent,
+    ProductDetailsComponent
    
-      
-
   ],
   imports: [
     BrowserModule, 

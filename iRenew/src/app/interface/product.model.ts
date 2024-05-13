@@ -1,10 +1,11 @@
 // Create a product model (interface) to define the structure of each product.
 export interface Product {
-    id: number;
+    id: string;
     title: string;
     quantity: number,
     description: string;
     condition: string;
+    category: string;
     price: string;
     currency: string;
     imageUrl: string;

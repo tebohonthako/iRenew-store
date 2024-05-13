@@ -9,33 +9,23 @@ import { ProdutsPageComponent } from './pages/produts-page/produts-page.componen
 import { ConfirmationPageComponent } from './pages/confirmation-page/confirmation-page.component';
 import { BillingPageComponent } from './pages/billing-page/billing-page.component';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { CategoryComponent } from './pages/category/category.component';
 
 const routes: Routes = [
 
-  { path: '', redirectTo: '/landing', pathMatch: 'full' }, // redirect to `first-component or landing page`
-
+  { path: '', redirectTo: '/landing', pathMatch: 'full' },
   { path: 'landing', component: LandingPageComponent },
-
   { path: 'register', component: RegisterPageComponent},
-
   { path: 'login', component: LoginComponent },
-
   { path: 'billing', component: BillingPageComponent },
-
   { path: 'checkout', component: CheckoutPageComponent },
-
   { path: 'profile', component: ProfilePageComponent},
-  
   { path: 'profile/:id', component: ProfilePageComponent },
-
   { path: 'products', component: ProdutsPageComponent },
-
+  { path: 'products/:id', component: ProdutsPageComponent },
+  { path: 'category/:category', component: CategoryComponent},
   { path: 'confirmation', component: ConfirmationPageComponent },
-
- 
   { path: 'cart', component: CartPageComponent }
-  
-//  { path: '**', component: PageNotFoundComponent },  Wildcard route for a 404 page (page not found)
   
   ];
 

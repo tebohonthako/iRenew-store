@@ -10,7 +10,7 @@
       "currency": "R",
       "imageUrl": "assets/images/iphone15-red.jpeg",
       "specs": [
-        "Display: Super Retina XDR display",
+        "Display: Super Retina XDR display", 
         "Processor: A15 Bionic chip",
         "Camera System: Pro 12MP camera system with Ultra Wide, Wide, and Telephoto cameras",
         "Face ID: Enabled for secure authentication",
@@ -291,6 +291,18 @@
       "Suburb": "cresta",
       "CityorProvince": "johanessburg",
       "PostalCode": "2094"
+    },
+    {
+      "id": "0d26",
+      "name": "a",
+      "email": "a@a.a",
+      "password": "T1234"
+    },
+    {
+      "id": "dfe1",
+      "name": "Tommy",
+      "email": "tom",
+      "password": "tom1"
     }
-]}
-  
+  ]
+}
