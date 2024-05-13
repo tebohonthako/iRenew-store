@@ -2,6 +2,7 @@ import { Component, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth-service.service';
 
 @Component({
   selector: 'app-login',
@@ -13,7 +14,7 @@ export class LoginComponent {
 
   public loginForm!: FormGroup
 
-  constructor(private formbuilder: FormBuilder,private http: HttpClient, private router: Router) { }
+  constructor(private formbuilder: FormBuilder,private http: HttpClient, private router: Router,private authService: AuthService) { }
 
   ngOnInit(): void 
   {
@@ -35,7 +36,8 @@ login()
         if(user)
         {
           alert('Successfully Logged in');
-          this.isLoggedIn =true; 
+       
+          this.isLoggedIn =true; // remove
           this.loginForm.reset();
           this.router.navigate(["/profile/"+user.id])
         }
