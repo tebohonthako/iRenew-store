@@ -30,7 +30,8 @@ login()
         {
           return details.email === this.loginForm.value.email && details.password === this.loginForm.value.password;
         });
-        console.log(this.loginForm);
+        console.log(this.loginForm.value.email);
+        const username = localStorage.setItem("user", this.loginForm.value.email);
         
         if(user)
         {
@@ -52,4 +53,5 @@ login()
       return this.getLoginuser;
       console.log(this.getLoginuser)
     }
+    
   }
