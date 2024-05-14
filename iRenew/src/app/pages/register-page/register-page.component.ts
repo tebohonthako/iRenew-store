@@ -36,12 +36,20 @@ export class RegisterPageComponent implements OnInit{
     private http: HttpClient,
     private router: Router,private authService: AuthService
   ) {}
-    passwordValidator(){
-      const regex = /[!@#$%^&*(),.?":{}|<>]/;
-      return regex.test(this.Register.get('password')?.value);
-    }
-    passwordValidator2(){
-      return this.Register.get('password')?.errors;
+   
+    validatePassword(password: string): boolean {
+      const minLength = 8;
+      const specialChars = /[!@#$%^&*(),.?":{}|<>]/;
+    
+      if (password.length < minLength) {
+        return false;
+      }
+    
+      if (!specialChars.test(password)) {
+        return false;
+      }
+    
+      return true;
     }
   ngOnInit(): void 
   {

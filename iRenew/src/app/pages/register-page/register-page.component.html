@@ -16,6 +16,7 @@
                   formControlName="name"
                   placeholder="Name"
                 />
+                <small *ngIf="Register.get('name')?.errors&&Register.get('name')?.touched" class="comment" >Required</small>
               </div>
             </div>
             <div class="mb-3">
@@ -40,7 +41,7 @@
                   id="inputPassword"
                   placeholder="Password"
                 />
-                <small *ngIf = "passwordValidator||passwordValidator2()&&Register.get('password')?.touched" class="comment">Password must have a special character and be atleast 8 characers long</small>
+                <small *ngIf = "!validatePassword(Register.get('password')?.value)&&Register.get('password')?.touched" class="comment">Password must have a special character and be atleast 8 characers long</small>
                 
               </div>
             </div>
@@ -58,7 +59,7 @@
                 </div>
               </div>
             </div>
-            <button type="submit" class="btn btn-dark register-button ">
+            <button type="submit" class="btn btn-dark register-button "  [disabled]="!Register.valid">
               Register
             </button>
           </form>
