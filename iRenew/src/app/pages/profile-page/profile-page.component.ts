@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { AuthService } from 'src/app/services/auth-service.service';
 
 @Component({
   selector: 'app-profile-page',
@@ -13,10 +14,11 @@ export class ProfilePageComponent implements OnInit {
   UserId: number;
 
 
-constructor (private http: HttpClient,private route: ActivatedRoute) {
+constructor (private http: HttpClient,private route: ActivatedRoute,private authService:AuthService) {
   this.UserId =0;
 }
-  
+  UserMail=this.authService.getLoggedInUserEmail();
+ 
 
 ngOnInit(){
 
