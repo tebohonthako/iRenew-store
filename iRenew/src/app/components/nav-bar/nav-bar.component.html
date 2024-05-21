@@ -75,7 +75,7 @@
     </span>
   </button>
 </a>
-<a *ngIf="isLoggedIn" routerLink="/logout" class="LOGIN1">Logout</a>
+<a *ngIf="isLoggedIn" routerLink="/logout" (click)="logOut()" class="LOGIN1">Logout</a>
 <a *ngIf="!isLoggedIn" routerLink="/login" class="LOGIN1">Login</a>
 <a *ngIf="!isLoggedIn" routerLink="/register" class="LOGIN1">Register</a>
       </div>
