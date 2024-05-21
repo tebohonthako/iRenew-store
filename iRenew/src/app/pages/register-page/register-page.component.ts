@@ -77,7 +77,7 @@ export class RegisterPageComponent implements OnInit{
 
       
         console.log("testing email in register page",this.Register.value.email,)
-        this.authService.login(this.Register.value.email);
+        this.authService.login(this.Register.value.email,this.Register.value.name);
         this.router.navigate(["/profile/"+newUserId]); //testing, routing to profile after registering
         //this.router.navigate(['/login']);
         this.Register.reset();

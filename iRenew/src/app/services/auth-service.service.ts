@@ -7,15 +7,18 @@ import { Subject } from 'rxjs';
 export class AuthService {
   private isLoggedIn: boolean = false;
   private loggedInUserEmail: string = '';
+  private loggedInUserName:string='';
   authChanged = new Subject<boolean>(); // Subject for notifying authentication state changes
   getIsLoggedInUser: any;
 
   constructor() { }
 
-  login(email: string): void {
+  login(email: string,name: string): void {
     this.isLoggedIn = true;
     this.loggedInUserEmail = email;
+    this.loggedInUserName=name;
     localStorage.setItem('loggedInUserEmail', email);
+    localStorage.setItem('nameUser',name);
   
     this.authChanged.next(true); // Notify subscribers that authentication state has changed
   }
@@ -24,6 +27,7 @@ export class AuthService {
     this.isLoggedIn = false;
     this.loggedInUserEmail = '';
     localStorage.removeItem('loggedInUserEmail');
+    localStorage.removeItem('nameUser');
     this.authChanged.next(false); // Notify subscribers that authentication state has changed
   }
 
@@ -34,11 +38,15 @@ export class AuthService {
   getLoggedInUserEmail(): string {
     return this.loggedInUserEmail;
   }
+  getLoggedUserName():string{
+    return this.loggedInUserName;
+  }
 
   initAuth(): void {
     const userEmail = localStorage.getItem('loggedInUserEmail');
-    if (userEmail) {
-      this.login(userEmail);
+    const name=localStorage.getItem('nameUser');
+    if (userEmail) {;
+      this.login(userEmail,name!);
     }
   }
 }
