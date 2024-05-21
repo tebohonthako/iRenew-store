@@ -39,12 +39,12 @@ login()
        
           this.authService.logout();
           this.authService.login(this.loginForm.value.email);
-          this.loginForm.reset();
           this.router.navigate(["/profile/"+user.id])
+          this.loginForm.reset();
         }
         else
         {
-          alert("User not found")
+          alert("User not found");
         }
       },err=>
       {
@@ -53,6 +53,6 @@ login()
     }
     getLoginuser(){
       return this.getLoginuser;
-      console.log(this.getLoginuser)
+      console.log(this.getLoginuser);
     }
   }

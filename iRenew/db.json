@@ -333,6 +333,38 @@
       "name": "Thembakazi",
       "password": "Thembakazi@23",
       "email": "thembakazi@gmail.com"
+    },
+    {
+      "id": "d7431b4d-8c86-449b-95f1-92bcb4290a74",
+      "name": "fanele",
+      "password": "Fanele@99",
+      "email": "fanele@gmail.com"
+    },
+    {
+      "id": "ae59509b-1cff-48fb-8df0-58ff9fe83edc",
+      "name": "sbusiso",
+      "password": "Sbusiso@23",
+      "email": "Sbusiso@gmail.com"
+    },
+    {
+      "id": "4b92",
+      "StreetNumber": "122",
+      "StreetName": "",
+      "Suburb": "pretoria",
+      "CityorProvince": "tswane",
+      "PostalCode": "2333"
+    },
+    {
+      "id": "8f4e1d9f-36fa-48ad-9f39-8c7aff9d7362",
+      "name": "Sbu",
+      "password": "1234567#",
+      "email": "Sbusiso@gmail.com"
+    },
+    {
+      "id": "ab43ae0b-fe42-4743-b02c-8145de38864c",
+      "name": "fanele",
+      "password": "Fanele@99",
+      "email": "fanele@gmail.com"
     }
   ]
 }

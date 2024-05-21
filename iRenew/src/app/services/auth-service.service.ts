@@ -8,6 +8,7 @@ export class AuthService {
   private isLoggedIn: boolean = false;
   private loggedInUserEmail: string = '';
   authChanged = new Subject<boolean>(); // Subject for notifying authentication state changes
+  getIsLoggedInUser: any;
 
   constructor() { }
 

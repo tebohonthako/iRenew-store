@@ -18,6 +18,7 @@ constructor (private http: HttpClient,private route: ActivatedRoute,private auth
   this.UserId =0;
 }
   UserMail=this.authService.getLoggedInUserEmail();
+  nameOfUser=localStorage.getItem('nameUser');
  
 
 ngOnInit(){
