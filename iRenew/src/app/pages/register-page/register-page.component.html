@@ -47,7 +47,7 @@
             </div>
             <div class="mb-3">
               <div class="Remember">
-                <div class="form-check">
+                <!-- <div class="form-check">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -56,10 +56,10 @@
                   <label class="form-check-label" for="gridCheck1">
                     Remember me
                   </label>
-                </div>
+                </div> -->
               </div>
             </div>
-            <button type="submit" class="btn btn-dark register-button "  [disabled]="!Register.valid">
+            <button type="submit" class="btn btn-dark register-button "  [disabled]="!Register.valid||!validatePassword(Register.get('password')?.value)">
               Register
             </button>
           </form>
