@@ -13,7 +13,7 @@ export class LoginComponent {
   @Input() public isLoggedIn: boolean = true; 
 
   public loginForm!: FormGroup
-
+  private nameUser='';
   constructor(private formbuilder: FormBuilder,private http: HttpClient, private router: Router,private authService: AuthService) { }
 
   ngOnInit(): void 
@@ -28,16 +28,16 @@ login()
     {
       this.http.get<any>("http://localhost:8080/users").subscribe(res=>{
         const user = res.find((details:any)=>
-        {
+        {this.nameUser=details.name;
           return details.email === this.loginForm.value.email && details.password === this.loginForm.value.password;
         });
         console.log(this.loginForm.value.email);
-        const username = localStorage.setItem("user", this.loginForm.value.email);
+        //const username = localStorage.setItem("user", this.loginForm.value.email);
         
         if(user)
         {
           alert('Successfully Logged in');
-       
+          this.authService.login(this.loginForm.value.email,this.nameUser);
           this.isLoggedIn =true; // remove
           this.loginForm.reset();
           this.router.navigate(["/profile/"+user.id])

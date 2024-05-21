@@ -113,6 +113,18 @@
       "name": "",
       "password": "",
       "email": "gfj"
+    },
+    {
+      "id": "2a2c493b-48c4-4d5b-9903-6059835a187c",
+      "name": "Sibusiso",
+      "password": "12345678@",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "0e3f6d05-0e86-461f-b4e7-e4f1dd956bad",
+      "name": "Sibusiso",
+      "password": "12345678@",
+      "email": "sibiyasm7@gmail.com"
     }
   ]
 }
