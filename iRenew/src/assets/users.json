@@ -33,8 +33,6 @@
     {
       "id": "edb6",
       "name": "Tommy",
-      "email": "tommy@mail.com",
-
       "email": "andile.msomi@gmail.com",
       "password": "TeamA#5"
     },
@@ -49,7 +47,84 @@
       "name": "Katleho",
       "email": "Katleho@gmail.com",
       "password": "hello"
-
+    },
+    {
+      "id": "0f0ec573-777c-4238-abb3-c5dc3856e8ca",
+      "name": "Sibusiso",
+      "password": "12345678",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "612fb24f-2cbd-4031-9ff3-b706031be9e7",
+      "name": "Sibusiso",
+      "password": "dgbgsbsrnbrn",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "86b2cb0c-57d9-47e3-b5e3-94faea619b0f",
+      "name": "Sibusiso",
+      "password": "12345678",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "0560c128-f542-4ed9-8262-a74f6e868645",
+      "name": "Sibusiso",
+      "password": "123456",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "42c44178-6cc7-4263-9644-03615875f075",
+      "name": "Sibusiso",
+      "password": "12345",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "73df16a1-7ea6-40ec-a0ee-a1ba1ad903b8",
+      "name": "Sibusiso",
+      "password": "123456",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "f035aef8-6380-41cb-a7f9-8d3e989e631f",
+      "name": "Sibusiso",
+      "password": "123456",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "aa2c1b8c-11c5-40c8-81af-21eff6db1ab0",
+      "name": "Sibusiso",
+      "password": "123456",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "67eb2899-6f11-409d-9de6-3e08bce627e8",
+      "name": "0ubyiub",
+      "password": "niniipk",
+      "email": "dalfnlkn"
+    },
+    {
+      "id": "963dc1a5-6d72-4acb-a873-113c95f3a98a",
+      "name": "Sibusiso",
+      "password": "123456767",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "611de24c-eb2d-4865-961e-b69cec1e2ebe",
+      "name": "",
+      "password": "",
+      "email": "gfj"
+    },
+    {
+      "id": "2a2c493b-48c4-4d5b-9903-6059835a187c",
+      "name": "Sibusiso",
+      "password": "12345678@",
+      "email": "sibiyasm7@gmail.com"
+    },
+    {
+      "id": "0e3f6d05-0e86-461f-b4e7-e4f1dd956bad",
+      "name": "Sibusiso",
+      "password": "12345678@",
+      "email": "sibiyasm7@gmail.com"
     }
   ]
 }

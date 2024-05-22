@@ -35,6 +35,12 @@
       "name": "",
       "email": "",
       "password": ""
+    },
+    {
+      "id": "6be3",
+      "name": "Sihle",
+      "email": "Sihle@gmail.com",
+      "password": "123"
     }
   ]
 }
