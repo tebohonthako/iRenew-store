@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { AuthService } from 'src/app/services/auth-service.service';
 
 @Component({
   selector: 'app-nav-bar',
@@ -9,9 +10,14 @@ import { Router } from '@angular/router';
 export class NavBarComponent {
   isLoggedIn: boolean = false; // Set this to true if user is logged in, false otherwise
 
-  constructor(private router: Router) {
+  constructor(private router: Router, private auth: AuthService) {
     // Check if the user is logged in when the component initializes (you need to implement this logic)
     this.checkLoggedInStatus();
+  }
+
+  ngOnit(){
+    this.isLoggedIn = this.auth.getIsLoggedIn();
+   
   }
 
   checkLoggedInStatus() {
@@ -29,6 +35,14 @@ export class NavBarComponent {
   }
 
 }
+
+onClick(){
+  if(this.auth.getLoggedInUserEmail()){
+    this.auth.getLoggedInUserEmail;
+  }
+  console.log(this.auth.getIsLoggedIn());
+}
+
 logOut(){
   localStorage.removeItem("user");
   this.isLoggedIn = false;

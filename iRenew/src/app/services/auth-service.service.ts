@@ -16,6 +16,7 @@ export class AuthService {
     this.isLoggedIn = true;
     this.loggedInUserEmail = email;
     this.loggedInUserName=name;
+  //  console.log('status of the flag: ',this.isLoggedIn)
     localStorage.setItem('loggedInUserEmail', email);
     localStorage.setItem('nameUser',name);
   
@@ -24,6 +25,7 @@ export class AuthService {
 
   logout(): void {
     this.isLoggedIn = false;
+    console.log('Logged in');
     this.loggedInUserEmail = '';
     localStorage.removeItem('loggedInUserEmail');
     localStorage.removeItem('nameUser');
@@ -44,7 +46,7 @@ export class AuthService {
   initAuth(): void {
     const userEmail = localStorage.getItem('loggedInUserEmail');
     const name=localStorage.getItem('nameUser');
-    if (userEmail) {;
+    if (userEmail) {
       this.login(userEmail,name!);
     }
   }
