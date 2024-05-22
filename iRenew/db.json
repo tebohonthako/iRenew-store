@@ -303,6 +303,74 @@
       "name": "Tommy",
       "email": "tom",
       "password": "tom1"
+    },
+    {
+      "id": "78d3970b-d430-458e-a68a-ad711d352600",
+      "name": "fanele",
+      "password": "Fanele@99",
+      "email": "fanele@gmail.com"
+    },
+    {
+      "id": "6427d121-a2fa-4c68-a72f-5d8b6b6026f0",
+      "name": "piji0jp",
+      "password": "mipipjpkjijj@",
+      "email": "fanele@gmail.com"
+    },
+    {
+      "id": "5e578651-135e-45ad-ba7b-9c4c5bed03f3",
+      "name": "ok--[j",
+      "password": "-mp;jmp\\ijmo[jp;\\@@",
+      "email": "fanele@gmail.com"
+    },
+    {
+      "id": "8d45eb1b-d17d-41a1-bb42-1ba196258bf6",
+      "name": "fanele",
+      "password": "Fanele@99",
+      "email": "fanele@gmail.com"
+    },
+    {
+      "id": "47ff2399-20f5-44db-ac69-bb89556d89eb",
+      "name": "Thembakazi",
+      "password": "Thembakazi@23",
+      "email": "thembakazi@gmail.com"
+    },
+    {
+      "id": "d7431b4d-8c86-449b-95f1-92bcb4290a74",
+      "name": "fanele",
+      "password": "Fanele@99",
+      "email": "fanele@gmail.com"
+    },
+    {
+      "id": "ae59509b-1cff-48fb-8df0-58ff9fe83edc",
+      "name": "sbusiso",
+      "password": "Sbusiso@23",
+      "email": "Sbusiso@gmail.com"
+    },
+    {
+      "id": "4b92",
+      "StreetNumber": "122",
+      "StreetName": "",
+      "Suburb": "pretoria",
+      "CityorProvince": "tswane",
+      "PostalCode": "2333"
+    },
+    {
+      "id": "8f4e1d9f-36fa-48ad-9f39-8c7aff9d7362",
+      "name": "Sbu",
+      "password": "1234567#",
+      "email": "Sbusiso@gmail.com"
+    },
+    {
+      "id": "ab43ae0b-fe42-4743-b02c-8145de38864c",
+      "name": "fanele",
+      "password": "Fanele@99",
+      "email": "fanele@gmail.com"
+    },
+    {
+      "id": "f283c8d0-c40a-470a-a94f-dbc7a4c43ab0",
+      "name": "Thembakazi",
+      "password": "12345678@",
+      "email": "thembakazi@gmail.com"
     }
   ]
 }

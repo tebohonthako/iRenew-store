@@ -1,6 +1,6 @@
     <div class="container3">
       <div class="container2">
-        <h3 class="John-doe">{{User.name}}</h3>
+        <h3 class="John-doe">{{nameOfUser}}</h3>
         <div class="container">
           <p>ADDRESS</p>
           <div class="icon" routerLink="/billing">
@@ -21,20 +21,13 @@
               class="form-control border-success"
               id="exampleFormControlInput1"
               placeholder=""
-              [(ngModel)]="User.email"
+              [(ngModel)]="UserMail"
             />
           </div>
-          <p>PASSWORD</p>
-          <div class="mb-4">
-            <input
-              type=""
-              class="form-control border-success"
-              id="exampleFormControlInput1"
-              placeholder=""
-            />
+          
           </div>
           <br />
-          <h4>Delete your account</h4>
+          
         </div>
       </div>
-    </div>
+   
