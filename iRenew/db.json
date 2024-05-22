@@ -365,6 +365,12 @@
       "name": "fanele",
       "password": "Fanele@99",
       "email": "fanele@gmail.com"
+    },
+    {
+      "id": "f283c8d0-c40a-470a-a94f-dbc7a4c43ab0",
+      "name": "Thembakazi",
+      "password": "12345678@",
+      "email": "thembakazi@gmail.com"
     }
   ]
 }
