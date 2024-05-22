@@ -1,6 +1,6 @@
 /* Basic Styling */
 html, body {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -13,13 +13,19 @@ html, body {
     display: flex;
   }
   .left-column {
+    margin-top: 60px;
     width: 65%;
     position: relative;
   }
    
   .right-column {
-    width: 35%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    width: 80%;
     margin-top: 60px;
+    background-color: #e8e8e8;
+    border-radius: 2px;
   }
   /* Left Column */
 .left-column img {
@@ -50,13 +56,14 @@ html, body {
     font-weight: 300;
     font-size: 52px;
     color: #43484D;
-    letter-spacing: -2px;
+    letter-spacing: -1px;
+   text-align: center;
   }
   .product-description p {
-    font-size: 16px;
+    font-size: 33px;
     font-weight: 300;
-    color: #86939E;
-    line-height: 24px;
+    color: #020202;
+    line-height: 33px;
   }
   /* Product Color */
 .product-color {
@@ -162,8 +169,9 @@ html, body {
 }
  
 .cart-btn {
+    margin-left: 10px;
   display: inline-block;
-  background-color: #7DC855;
+  background-color: #0a0b41;
   border-radius: 6px;
   font-size: 16px;
   color: #FFFFFF;

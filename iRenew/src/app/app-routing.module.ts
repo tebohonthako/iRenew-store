@@ -10,6 +10,7 @@ import { ConfirmationPageComponent } from './pages/confirmation-page/confirmatio
 import { BillingPageComponent } from './pages/billing-page/billing-page.component';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { CategoryComponent } from './pages/category/category.component';
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
 
 const routes: Routes = [
 
@@ -25,7 +26,8 @@ const routes: Routes = [
   { path: 'products/:id', component: ProdutsPageComponent },
   { path: 'category/:category', component: CategoryComponent},
   { path: 'confirmation', component: ConfirmationPageComponent },
-  { path: 'cart', component: CartPageComponent }
+  { path: 'cart', component: CartPageComponent },
+  {path: 'product-details',component:ProductDetailsComponent}
   
   ];
 
