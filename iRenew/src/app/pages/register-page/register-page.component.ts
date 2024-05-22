@@ -29,7 +29,7 @@ export class RegisterPageComponent implements OnInit{
   private generateNewUserId(): string {
     return uuidv4();
   }
-  api = 'http://localhost:8080/users'
+  api = 'http://localhost:3000/users'
 
   constructor(
     private formbuilder: FormBuilder,
