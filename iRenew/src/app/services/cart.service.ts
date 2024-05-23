@@ -11,7 +11,16 @@ export class CartService {
 
   // adding a product to cart
   addToCart(product: Product) {
-    this.cartItems.push(product);
+    if( this.cartItems.includes(product)){
+      console.log('product found');
+      this.cartItems[this.cartItems.indexOf(product)].quantity++;
+    }else if( !this.cartItems.includes(product)){
+      this.cartItems.push(product);
+
+    }
+   //this.cartItems[this.cartItems.indexOf(product)].quantity++:this.cartItems.push(product);
+ 
+
   }
   // removing an item from cart
   removeFromCart(product: Product) {

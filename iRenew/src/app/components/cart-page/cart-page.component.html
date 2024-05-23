@@ -39,6 +39,18 @@
                 >
                   +
                 </button>
+
+                <!-- remove product item button -->
+                <button
+                  class="btn btn-outline-danger"
+                  type="button"
+                  (click)="removeFromCart(product)"
+                >
+                  Remove
+                </button>
+                <p class="card-text">
+                  <small class="text-muted"></small>
+                </p>
               </div>
             </div>
           </div>
@@ -53,7 +65,7 @@
     </div>
     <div class="col">
       <a href="" class="check-user-out" routerLink="/billing">
-        <button class="btn btn-dark routerLink=">Checkout</button>
+        <button class="btn btn-dark routerLink">Checkout</button>
       </a>
     </div>
   </div>

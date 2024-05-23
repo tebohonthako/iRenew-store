@@ -29,6 +29,11 @@ export class CartPageComponent implements OnInit {
     }
   }
 
+  removeFromCart(product: Product) {
+    this.cartService.removeFromCart(product);
+    this.cartItems = this.cartService.getCartItems();
+  }
+
   calculateSubtotal(): number {
     return this.cartItems.reduce((total, item) => total + (Number(item.price) * item.quantity), 0);
   }
