@@ -26,7 +26,6 @@ export class AuthService {
 
   logout(): void {
     this.isLoggedIn = false;
-    console.log('Logged in');
     this.loggedInUserEmail = '';
     localStorage.removeItem('loggedInUserEmail');
     localStorage.removeItem('nameUser');

@@ -17,6 +17,12 @@ export class NavBarComponent {
 
   ngOnit(){
     this.isLoggedIn = this.auth.getIsLoggedIn();
+    if( localStorage.getItem('loggedInUserEmail')){
+      console.log(`User ${localStorage.getItem('loggedInUserEmail')}`);
+    }else{
+      console.log(`No one is logged in, the local storage is empty`);
+    }
+  
    
   }
 
