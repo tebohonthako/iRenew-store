@@ -1,14 +1,15 @@
 <div class="container">
   <h2>Your Cart</h2>
   <div class="row">
-    <div class="col" *ngFor="let product of cartItems">
-      <div class="card mb-3">
+    <div class="col-12" *ngFor="let product of cartItems">
+      <div class="card mb-3 p-3" style="width: 100%; height: 90%;">
         <div class="row g-0">
           <div class="col-md-4">
             <img
               [src]="product.imageUrl"
               alt="{{ product.title }}"
               class="img-fluid rounded-start"
+              style="width: 15rem; height: 15rem;"
             />
           </div>
           <div class="col-md-8">
@@ -51,7 +52,7 @@
       <p class="subtotal">Subtotal: R {{ calculateSubtotal() }}</p>
     </div>
     <div class="col">
-      <a href="" class="check-user-out" routerLink="/checkout">
+      <a href="" class="check-user-out" routerLink="/billing">
         <button class="btn btn-dark routerLink=">Checkout</button>
       </a>
     </div>

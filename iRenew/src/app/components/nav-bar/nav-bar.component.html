@@ -36,12 +36,12 @@
             <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1" />
           </svg>
         </a>
-        <a *ngIf="isLoggedIn" routerLink="/cart" class="me-3">
+        <a *ngIf="!isLoggedIn" routerLink="/cart" class="me-3">
           <button type="button" class="btn btn-primary position-relative">
             Cart
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               +
-              <span class="visually-hidden"></span>
+              <span></span>
             </span>
           </button>
         </a>

@@ -19,6 +19,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { ProfilePageComponent } from './pages/profile-page/profile-page.component';
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
+import { AuthService } from './services/auth-service.service';
 
 
 
@@ -50,7 +51,7 @@ import { CartPageComponent } from './components/cart-page/cart-page.component';
     
     
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ErrorHandler } from '@angular/core';
 
 @Component({
   selector: 'app-nav-bar',
@@ -7,35 +8,44 @@ import { Router } from '@angular/router';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent {
-  isLoggedIn: boolean = false; // Set this to true if user is logged in, false otherwise
+  isLoggedIn: boolean = false;
+  authService: any;
 
   constructor(private router: Router) {
-    // Check if the user is logged in when the component initializes (you need to implement this logic)
     this.checkLoggedInStatus();
   }
 
+  // Check the user's login status
   checkLoggedInStatus() {
-    // Implement logic to check if the user is logged in
-    // For example, you might check if there's a token in local storage or if there's a session
-    // Update isLoggedIn based on the result
-    // For demonstration purposes, I'm just setting it to true if there's a token in local storage
     const token = localStorage.getItem('user');
-    //this.isLoggedIn = !!token; 
-    if(token==null){
-      this.isLoggedIn=false;
-      // !! converts truthy/falsy values to true/false
-  }else{
-    this.isLoggedIn=true;
+    this.isLoggedIn =!!token; // Convert truthy/falsy to boolean
   }
 
-}
-logOut(){
-  localStorage.removeItem("user");
-  this.isLoggedIn = false;
-  this.router.navigate(["/login"]);
-  console.log(this.isLoggedIn)
-}
-}
+  // Log out the user
+  logOut() {
+    localStorage.removeItem('user');
+    this.isLoggedIn = false;
+    this.router.navigate(['/login']);
+    console.log('User logged out:', this.isLoggedIn);
+  }
 
+  // Log in the user
+  logIn(username: string, password: string) {
+    // Prompt the user for their credentials
+    // const username = prompt('Enter your username');
+    // const password = prompt('Enter your password');
 
-
+    // Use the AuthService to authenticate the user
+    this.authService.login(username, password).subscribe(
+      (response: { success: boolean, message: string }) => {
+        // If the login is successful, update the isLoggedIn variable and navigate to the home page
+        this.isLoggedIn = true;
+        this.router.navigate(['/landing']);
+      },
+      (error: Error) => {
+        // If the login fails, display an error message
+        alert('Invalid username or password');
+      }
+    );
+  }
+}
