@@ -37,7 +37,7 @@
           </svg>
         </a>
         <a *ngIf="!isLoggedIn" routerLink="/cart" class="me-3">
-          <button type="button" class="btn btn-primary position-relative">
+          <button type="button" class="btn btn-primary position-relative" *ngIf="isAuthenticated" (click)="testFunc()">
             Cart
             <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
               +
