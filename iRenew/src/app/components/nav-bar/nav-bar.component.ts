@@ -4,10 +4,6 @@ import { ErrorHandler } from '@angular/core';
 import { AuthService } from 'src/app/services/auth-service.service';
 import { ChangeDetectorRef } from '@angular/core';
 
-
-
-
-
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -48,16 +44,13 @@ export class NavBarComponent implements OnInit {
   // Log out the user
   logOut() {
     localStorage.removeItem('user');
-    this.isLoggedIn = false;
-    this.router.navigate(['/login']);
+    this.isAuthenticated = false;
+    this.router.navigate(['/landing']);
     console.log('User logged out:', this.isLoggedIn);
   }
   
  
   logIn(username: string, password: string) {
-    // Prompt the user for their credentials
-    // const username = prompt('Enter your username');
-    // const password = prompt('Enter your password');
 
     // // Use the AuthService to authenticate the user
     // this.authService.login(username, password).subscribe(

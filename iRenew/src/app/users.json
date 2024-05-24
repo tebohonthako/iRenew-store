@@ -41,6 +41,12 @@
       "name": "Sihle",
       "email": "Sihle@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "f1c5bd33-d12a-4b27-a1f3-c81acd5efd34",
+      "name": "Tebza",
+      "password": "Tebza123!",
+      "email": "Tebza@gmail.com"
     }
   ]
 }
