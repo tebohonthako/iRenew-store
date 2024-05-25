@@ -41,6 +41,12 @@
       "name": "Sihle",
       "email": "Sihle@gmail.com",
       "password": "123"
+    },
+    {
+      "id": "6367a481-6b30-44a3-ada9-b9b42fb1a911",
+      "name": "sbu",
+      "password": "1234567@",
+      "email": "sibiyasm7@gmail.com"
     }
   ]
 }
