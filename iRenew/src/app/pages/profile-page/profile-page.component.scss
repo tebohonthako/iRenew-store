@@ -39,10 +39,9 @@ input {
 
   h4 {
     text-align: center;
+    cursor: pointer;
+   
 
-    &:hover {
-      cursor: pointer;
-    }
   }
   
   .container2 {
@@ -52,3 +51,4 @@ input {
   .container3 {
     margin-top: 10rem;
   }
+ 
