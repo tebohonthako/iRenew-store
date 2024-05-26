@@ -7,13 +7,14 @@ import { Product } from '../interface/product.model';
   providedIn: 'root'
 })
 
-// <!-- Creating a service to fetch the product data from the JSON file using HttpClient-->
+// <!-- Creating a service to fetch the product data from the JSON file using HttpClient-->   return this.http.get(`${this.apiUrl}/products`);
 export class ProductService {
-  private apiURL = 'assets/products.json';
+  private apiURL = "http://localhost:8080/irenew/products/category/iPhones";
 
   constructor(private http: HttpClient) { }
 
   getProducts(): Observable<Product[]> {
+   // console.log(this.http.get<Product[]>(`${this.apiURL}`));
     return this.http.get<Product[]>(this.apiURL);
   }
 

@@ -4,10 +4,10 @@
     <div class="row row-cols-1 row-cols-md-3 g-4">  
       <div *ngFor="let product of products" class="col">
         <div class="card h-100 product-card">
-          <img [src]="product.imageUrl" width="150" alt="{{ product.title }}" class="product-image" />
+          <img [src]="product.image_url" width="150" alt="{{ product.title }}" class="product-image" />
           <div class="card-body product-details">
             <p>{{ product.title }}</p>
-            <p>Price: {{ product.currency }} {{ product.price }}</p>
+            <p>Price: {{ product.currency }} {{ product.price.toFixed(2) }}</p>
             <button type="button" class="btn btn-dark shop-button add-to-cart" (click)="addToCart(product)">
               + Add to cart
             </button>

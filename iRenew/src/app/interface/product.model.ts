@@ -5,9 +5,9 @@ export interface Product {
     quantity: number,
     description: string;
     condition: string;
-    price: string;
+    price: GLfloat;
     currency: string;
-    imageUrl: string;
+    image_url: string;
     specs: string[];
   }
   

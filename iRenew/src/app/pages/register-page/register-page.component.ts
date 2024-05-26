@@ -29,7 +29,7 @@ export class RegisterPageComponent implements OnInit{
   private generateNewUserId(): string {
     return uuidv4();
   }
-  api = 'http://localhost:3000/users'
+  api = "http://localhost:8080/api/v1/auth/register"///Subject to change
 
   constructor(
     private formbuilder: FormBuilder,
@@ -64,7 +64,7 @@ export class RegisterPageComponent implements OnInit{
   register() 
   {
     const newUserId = this.generateNewUserId();
-    const userData={'id':newUserId,
+    const userData={
     'name':`${this.Register.value.name}`,
     'password':`${this.Register.value.password}`,
     'email':`${this.Register.value.email}`
