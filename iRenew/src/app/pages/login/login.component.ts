@@ -3,6 +3,7 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth-service.service';
+import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-login',
@@ -14,45 +15,67 @@ export class LoginComponent {
 
   public loginForm!: FormGroup
   private nameUser='';
+  private email='';
+  private password="";
   constructor(private formbuilder: FormBuilder,private http: HttpClient, private router: Router,private authService: AuthService) { }
-
+  
   ngOnInit(): void 
   {
     this.loginForm = this.formbuilder.group({
       email: [''],
       password: ['', Validators.required]
     })};
-
-
-login()
-    {
-      this.http.get<any>("http://localhost:3000/users").subscribe(res=>{
-        const user = res.find((details:any)=>
-        {this.nameUser=details.name;
-          return details.email === this.loginForm.value.email && details.password === this.loginForm.value.password;
-        });
-        console.log(this.loginForm.value.email);
-        //const username = localStorage.setItem("user", this.loginForm.value.email);
+  private apiUrl="http://localhost:8080/api/v1/auth/login";
+  
+    login() {
+      this.password=this.loginForm.value.password;
+      //console.log(this.http.post<any>(this.apiUrl, {"email":this.loginForm.value.email,"password": this.password }));
+       this.http.post<any>(this.apiUrl, {"email":this.loginForm.value.email,"password": this.password }).subscribe(
+        (result) => {
+          // Handle successful login
+          console.log('Login successful', result);
+     
+        },
+        (error) => {
+          // Handle login error
+          console.error('Login error:', error);
         
-        if(user)
-        {
-          alert('Successfully Logged in');
-          this.authService.login(this.loginForm.value.email,this.nameUser);
-          this.isLoggedIn =true; // remove
-          this.loginForm.reset();
-          this.router.navigate(["/profile/"+user.id])
-          this.loginForm.reset();
         }
-        else
-        {
-          alert("User not found");
-        }
-      },err=>
-      {
-        alert("Something went wrong");
-      })
+      );
     }
-    getLoginuser(){
+
+// login()
+//     {
+      
+//       this.http.post<any>("http://localhost:8080/api/v1/auth/login").subscribe(res=>{
+//         const user = res.find((details:any)=>
+//         {this.nameUser=details.name;
+//           return details.email === this.loginForm.value.email && details.password === this.loginForm.value.password;
+//         });
+//         console.log(this.loginForm.value.email);
+//         //const username = localStorage.setItem("user", this.loginForm.value.email);
+        
+
+      
+//         if(user)
+//         {
+//           alert('Successfully Logged in');
+//           this.authService.login(this.loginForm.value.email,this.nameUser);
+//           this.isLoggedIn =true; // remove
+//           this.loginForm.reset();
+//           this.router.navigate(["/profile/"+user.id])
+//           this.loginForm.reset();
+//         }
+//         else
+//         {
+//           alert("User not found");
+//         }
+//       },err=>
+//       {
+//         alert("Something went wrong");
+//       })
+//     }
+     getLoginuser(){
       return this.getLoginuser;
       console.log(this.getLoginuser);
     }
