@@ -1,36 +1,28 @@
-import { Injectable } from '@angular/core'
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Users } from '../interface/users.model';
+
+const API_URL = 'http://localhost:8080/api/test/';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
+export class UserService {
+  constructor(private http: HttpClient) {}
 
-
-// <!-- Creating a service to fetch the user data from the JSON file using HttpClient-->
-export class UsersService {
-  private apiURL = './users.json';
-  fs: any;
-
-  constructor(private http: HttpClient) { }
-
-  
-   get Users(): Observable <Users> {
-    return this.http. get<Users>(this.apiURL);
+  getPublicContent(): Observable<any> {
+    return this.http.get(API_URL + 'all', { responseType: 'text' });
   }
-  returnuserbyid(id: any) {
-    const noteDocRef = doc(this.fs, `users/${id}`);
-    return docData(noteDocRef, { idField: 'id' }) as Observable<any>;
-}
-}
 
+  getUserBoard(): Observable<any> {
+    return this.http.get(API_URL + 'user', { responseType: 'text' });
+  }
+  
+  getModeratorBoard(): Observable<any> {
+    return this.http.get(API_URL + 'mod', { responseType: 'text' });
+  }
 
-function docData(noteDocRef: any, arg1: { idField: string; }): Observable<any> {
-  throw new Error('Function not implemented.');
+  getAdminBoard(): Observable<any> {
+    return this.http.get(API_URL + 'admin', { responseType: 'text' });
+  }
 }
-
-function doc(fs: any, arg1: string) {
-  throw new Error('Function not implemented.');
-}
-

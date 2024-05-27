@@ -7,7 +7,7 @@ import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 import { LoginComponent } from './pages/login/login.component';
 
-import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { RegisterComponent } from './pages/register-page/register-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
 import { ProdutsPageComponent } from './pages/produts-page/produts-page.component';
@@ -20,6 +20,7 @@ import { ProfilePageComponent } from './pages/profile-page/profile-page.componen
 import { FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { AuthService } from './services/auth-service.service';
+import { httpInterceptorProviders } from './utilities/http.interceptors';
 
 
 
@@ -29,7 +30,7 @@ import { AuthService } from './services/auth-service.service';
     NavBarComponent,
     LoginComponent ,   
     BillingPageComponent, 
-    RegisterPageComponent,  
+    RegisterComponent,  
     LandingPageComponent, 
     CheckoutPageComponent, 
     ProdutsPageComponent, 
@@ -51,7 +52,7 @@ import { AuthService } from './services/auth-service.service';
     
     
   ],
-  providers: [AuthService],
+  providers: [AuthService, httpInterceptorProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

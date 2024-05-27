@@ -23,7 +23,7 @@ export class NavBarComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    this.authService.isAuthenticated.subscribe(isAuthenticated => {
+   /*  this.authService.isAuthenticated.subscribe(isAuthenticated => {
       // Update the local isAuthenticated property whenever the authentication status changes
       this.isAuthenticated = isAuthenticated;
       console.log('status changed');
@@ -31,7 +31,7 @@ export class NavBarComponent implements OnInit {
       this.cd.detectChanges(); //updates the navbar to reflect the changes
       
     });
-    //console.log('this is the navbar ngOnInit()');
+   */ //console.log('this is the navbar ngOnInit()');
  
   }
  

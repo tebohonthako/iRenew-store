@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { RegisterComponent } from './pages/register-page/register-page.component';
 import { LandingPageComponent } from './pages/landing-page/landing-page.component';
 import { LoginComponent } from './pages/login/login.component';
 import { CheckoutPageComponent } from './pages/checkout-page/checkout-page.component';
@@ -16,7 +16,7 @@ const routes: Routes = [
 
   { path: 'landing', component: LandingPageComponent },
 
-  { path: 'register', component: RegisterPageComponent},
+  { path: 'register', component: RegisterComponent},
 
   { path: 'login', component: LoginComponent },
 
