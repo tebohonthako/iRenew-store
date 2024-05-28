@@ -12,13 +12,14 @@ import { AuthService } from 'src/app/services/auth-service.service';
 export class ProfilePageComponent implements OnInit {
   User: any;
   UserId: number;
+  userApi="http://localhost:8080/irenew/users/";
 
 
 constructor (private http: HttpClient,private route: ActivatedRoute,private authService:AuthService) {
   this.UserId =0;
 }
-  UserMail=this.authService.getLoggedInUserEmail();
-  nameOfUser=localStorage.getItem('nameUser');
+  UserMail="";
+  nameOfUser="";
  
 
 ngOnInit(){
@@ -27,9 +28,10 @@ ngOnInit(){
      this.UserId = + params['id'];
    });
 
-  this.http.get('assets/users.json').subscribe((res: any) => {
-      this.User = res[Object.keys(res)[0]].find((e:any)=> e.id == this.UserId);
-      console.log(this.User);}
+  this.http.get(`${this.userApi}${this.UserId}`).subscribe((res: any) => {
+    this.UserMail=res.email;
+    this.nameOfUser=res.name;
+   }
       
     );
 }

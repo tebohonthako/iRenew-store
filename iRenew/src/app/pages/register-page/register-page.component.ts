@@ -63,7 +63,7 @@ export class RegisterPageComponent implements OnInit{
 
   register() 
   {
-    const newUserId = this.generateNewUserId();
+    let UserId :any;
     const userData={
     'name':`${this.Register.value.name}`,
     'password':`${this.Register.value.password}`,
@@ -72,13 +72,10 @@ export class RegisterPageComponent implements OnInit{
     this.http.post<any>(this.api, userData).subscribe((resp) => {
       console.log(this.Register);
         alert('sign up successful');
-
-        //the navigator method accepts an array of route as an argument
-
-      
-        console.log("testing email in register page",this.Register.value.email,)
-        this.authService.login(this.Register.value.email,this.Register.value.name);
-        this.router.navigate(["/profile/"+newUserId]); //testing, routing to profile after registering
+        this.authService.login(resp.token);
+        UserId=this.authService.getUserIdFromToken(resp.token);
+        
+        this.router.navigate(["/profile/"+UserId]); //testing, routing to profile after registering
         //this.router.navigate(['/login']);
         this.Register.reset();
       },

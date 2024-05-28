@@ -1,5 +1,8 @@
 {
   "devDependencies": {
     "@types/uuid": "^9.0.8"
+  },
+  "dependencies": {
+    "jwt-decode": "^4.0.0"
   }
 }
