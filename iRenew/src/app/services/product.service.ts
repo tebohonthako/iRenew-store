@@ -12,7 +12,6 @@ export class ProductService {
   private apiURL = "http://localhost:8080/irenew/products/";
 
   constructor(private http: HttpClient) { }
-
   getProducts(): Observable<Product[]> {
    // console.log(this.http.get<Product[]>(`${this.apiURL}`));
     return this.http.get<Product[]>(this.apiURL);
@@ -22,5 +21,11 @@ export class ProductService {
   
     return this.http.get<Product[]>(`${this.apiURL}category/${category}`);
    }
+   getAll(category:String){
+  
+    return this.http.get<Product[]>(`${this.apiURL}${category}`);
+   }
+   
+   
 
 }

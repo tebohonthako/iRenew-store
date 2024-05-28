@@ -6,6 +6,7 @@ import * as jwt_decode  from 'jwt-decode';
   providedIn: 'root'
 })
 export class AuthService {
+  
   private isLoggedIn: boolean = false;
   // private loggedInUserEmail: string = '';
   // private loggedInUserName:string='';

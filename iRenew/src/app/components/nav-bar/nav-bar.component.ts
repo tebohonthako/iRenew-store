@@ -24,6 +24,9 @@ export class NavBarComponent implements OnInit {
   goToProds(category: String){
     this.router.navigate([`/products/${category}`]);
   }
+  goToProdsAll(category: String){
+    this.router.navigate([`products/${category}`]);
+  }
   ngOnInit(): void {
     if(this.authService.getIsLoggedIn()){
       this.authService.login(localStorage.getItem("token")!)
