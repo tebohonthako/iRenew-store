@@ -21,7 +21,9 @@ export class NavBarComponent implements OnInit {
   constructor(private router: Router,private authService: AuthService,private cd: ChangeDetectorRef) {
     //this.checkLoggedInStatus();
   }
-  
+  goToProds(category: String){
+    this.router.navigate(['/products',{category}]);
+  }
   ngOnInit(): void {
     if(this.authService.getIsLoggedIn()){
       this.authService.login(localStorage.getItem("token")!)
