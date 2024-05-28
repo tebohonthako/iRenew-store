@@ -1,4 +1,6 @@
+import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./landing-page.component.scss']
 })
 export class LandingPageComponent {
+  constructor(private http: HttpClient, private router: Router){}
 
+getProducts(categor:string){
+navigator.router
+}
 }
