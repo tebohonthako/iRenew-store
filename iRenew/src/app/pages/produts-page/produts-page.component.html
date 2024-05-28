@@ -2,7 +2,7 @@
 <!-- Products page displaying data we are pulling from products.json-server -->
 <div class="container" id="products-cards">
     <div class="row row-cols-1 row-cols-md-3 g-4">  
-      <div *ngFor="let product of products" class="col">
+      <div *ngFor="let product of data" class="col">
         <div class="card h-100 product-card">
           <img [src]="product.imageUrl" width="150" alt="{{ product.title }}" class="product-image" />
           <div class="card-body product-details">

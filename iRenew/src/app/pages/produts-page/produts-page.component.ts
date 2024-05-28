@@ -11,15 +11,25 @@ import { CartService } from 'src/app/services/cart.service'
 export class ProdutsPageComponent implements OnInit  {
 
   products: Product[] = [];
+  data: any[] = [];
 
 
   constructor(private productService: ProductService, private cartService: CartService) { }
 
   ngOnInit(): void {
-    this.productService.getProducts().subscribe((data: any) => {
-      this.products = data.product; 
-      console.log(data.product)
-    });
+    this.getProducts();
+  }
+
+  getProducts(): void {
+    this.productService.getProducts().subscribe(
+      (response: any[]) => {
+        this.data = response;
+        console.log('My products:', this.data);
+      },
+      (error) => {
+        console.error('Error fetching favorite products:', error);
+      }
+    );
   }
 
   // functionality to add items to the cart

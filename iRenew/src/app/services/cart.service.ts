@@ -19,7 +19,6 @@ export class CartService {
 
     }
    //this.cartItems[this.cartItems.indexOf(product)].quantity++:this.cartItems.push(product);
- 
 
   }
   // removing an item from cart
