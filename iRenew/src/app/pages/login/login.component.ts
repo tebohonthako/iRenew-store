@@ -17,6 +17,7 @@ export class LoginComponent {
   private nameUser='';
   private email='';
   private password="";
+  private userId:any;
   constructor(private formbuilder: FormBuilder,private http: HttpClient, private router: Router,private authService: AuthService) { }
   
   ngOnInit(): void 
@@ -34,6 +35,11 @@ export class LoginComponent {
         (result) => {
           // Handle successful login
           console.log('Login successful', result);
+          this.authService.login(result.token);
+          this.userId= this.authService.getUserIdFromToken(result.token);
+
+          this.router.navigate(["/profile/"+this.userId])
+          this.loginForm.reset();
      
         },
         (error) => {

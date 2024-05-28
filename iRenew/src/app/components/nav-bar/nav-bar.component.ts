@@ -23,6 +23,9 @@ export class NavBarComponent implements OnInit {
   }
   
   ngOnInit(): void {
+    if(this.authService.getIsLoggedIn()){
+      this.authService.login(localStorage.getItem("token")!)
+    }
     this.authService.isAuthenticated.subscribe(isAuthenticated => {
       // Update the local isAuthenticated property whenever the authentication status changes
       this.isAuthenticated = isAuthenticated;
@@ -43,7 +46,7 @@ export class NavBarComponent implements OnInit {
 
   // Log out the user
   logOut() {
-    localStorage.removeItem('user');
+    this.authService.logout();
     this.isAuthenticated = false;
     this.router.navigate(['/landing']);
     console.log('User logged out:', this.isLoggedIn);
