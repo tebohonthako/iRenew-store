@@ -10,7 +10,7 @@ import { Router, RouterLink } from '@angular/router';
 export class LandingPageComponent {
   constructor(private http: HttpClient, private router: Router){}
 
-getProducts(categor:string){
-navigator.router
+getProducts(category:string){
+  this.router.navigate(["/profile/"+category]); 
 }
 }
