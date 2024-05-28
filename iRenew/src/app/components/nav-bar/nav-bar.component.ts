@@ -22,7 +22,7 @@ export class NavBarComponent implements OnInit {
     //this.checkLoggedInStatus();
   }
   goToProds(category: String){
-    this.router.navigate(['/products',{category}]);
+    this.router.navigate([`/products/${category}`]);
   }
   ngOnInit(): void {
     if(this.authService.getIsLoggedIn()){

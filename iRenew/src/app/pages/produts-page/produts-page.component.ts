@@ -18,12 +18,15 @@ export class ProdutsPageComponent implements OnInit  {
 
   ngOnInit(): void {
     this.category = this.route.snapshot.paramMap.get('id')!;
+    console.log(this.category);
     this.productService.getByCategory(this.category).subscribe((data: any) => {
       this.products = data; 
     });
     
   }
-
+ testClick(){
+  console.log("testclick");
+ }
   // functionality to add items to the cart
   addToCart(product: Product) {
     this.cartService.addToCart(product);

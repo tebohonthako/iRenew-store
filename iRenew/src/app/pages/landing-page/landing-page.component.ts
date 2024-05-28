@@ -11,6 +11,7 @@ export class LandingPageComponent {
   constructor(private http: HttpClient, private router: Router){}
 
 getProducts(category:string){
-  this.router.navigate(["/profile/"+category]); 
+
+  this.router.navigate([`/products/${category}`]);
 }
 }

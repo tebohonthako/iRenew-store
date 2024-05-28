@@ -9,7 +9,7 @@ import { Product } from '../interface/product.model';
 
 // <!-- Creating a service to fetch the product data from the JSON file using HttpClient-->   return this.http.get(`${this.apiUrl}/products`);
 export class ProductService {
-  private apiURL = "http://localhost:8080/irenew/products/category/iPhones";
+  private apiURL = "http://localhost:8080/irenew/products/";
 
   constructor(private http: HttpClient) { }
 
