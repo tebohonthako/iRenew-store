@@ -23,6 +23,8 @@ import { AuthService } from './services/auth-service.service';
 
 
 
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,10 +37,10 @@ import { AuthService } from './services/auth-service.service';
     ProdutsPageComponent, 
     ConfirmationPageComponent,
     ProfilePageComponent,
-    CartPageComponent
+    CartPageComponent,
    
-      
-
+    ProductDetailsComponent
+   
   ],
   imports: [
     BrowserModule, 

@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ProductService } from 'src/app/services/product.service';
 import { Product } from 'src/app/interface/product.model';
 import { CartService } from 'src/app/services/cart.service'
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-produts-page',
@@ -13,9 +13,10 @@ export class ProdutsPageComponent implements OnInit  {
 
   products: Product[] = [];
   private category:string="";
+  private id="";
 
-  constructor(private productService: ProductService, private cartService: CartService,private route:ActivatedRoute) { }
-
+  constructor(private productService: ProductService, private cartService: CartService,private route:ActivatedRoute,private router: Router) { }
+  
   ngOnInit(): void {
     this.category = this.route.snapshot.paramMap.get('id')!;
     console.log(this.category);
@@ -28,8 +29,9 @@ export class ProdutsPageComponent implements OnInit  {
   }
     
   }
- testClick(){
+ goToDetails(id:any){
   console.log("testclick");
+  this.router.navigate(["/productdetails",this.id]);
  }
   // functionality to add items to the cart
   addToCart(product: Product) {

@@ -11,18 +11,15 @@ import { BillingPageComponent } from './pages/billing-page/billing-page.componen
 import { CartPageComponent } from './components/cart-page/cart-page.component';
 import { AuthGuard } from './services/auth.guard';
 
+import { ProductDetailsComponent } from './pages/product-details/product-details.component';
+
 const routes: Routes = [
 
-  { path: '', redirectTo: '/landing', pathMatch: 'full' }, // redirect to `first-component or landing page`
-
+  { path: '', redirectTo: '/landing', pathMatch: 'full' },
   { path: 'landing', component: LandingPageComponent },
-
   { path: 'register', component: RegisterPageComponent},
-
   { path: 'login', component: LoginComponent },
-
   { path: 'billing', component: BillingPageComponent },
-
   { path: 'checkout', component: CheckoutPageComponent },
 
   { path: 'profile', component: ProfilePageComponent,canActivate: [AuthGuard] },
@@ -31,6 +28,12 @@ const routes: Routes = [
 
   { path: 'products/:id', component: ProdutsPageComponent },
 
+  { path: 'profile', component: ProfilePageComponent},
+  { path: 'profile/:id', component: ProfilePageComponent },
+  { path: 'products', component: ProdutsPageComponent },
+  { path: 'products/:id', component: ProdutsPageComponent },
+  
+  { path: 'productdetails/:id', component: ProductDetailsComponent },
   { path: 'confirmation', component: ConfirmationPageComponent },
 
 
@@ -39,9 +42,11 @@ const routes: Routes = [
 
 
  
-  { path: 'cart', component: CartPageComponent }
+  
   
 //  { path: '**', component: PageNotFoundComponent },  Wildcard route for a 404 page (page not found)
+  { path: 'cart', component: CartPageComponent },
+  {path: 'product-details',component:ProductDetailsComponent}
   
   ];
 
