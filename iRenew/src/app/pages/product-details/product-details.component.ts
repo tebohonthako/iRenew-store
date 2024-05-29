@@ -26,15 +26,15 @@ export class ProductDetailsComponent implements OnInit{
    });
 
    this.productService.getById(this.productID).subscribe((data:any)=>{this.product=data; this.specsString=data.specs.toString();
-    console.log(this.specsString);
+ 
     
-      // Replace curly braces and split the string into an array
+   
       const cleanedString = this.specsString.replace(/{|}/g, '');
       const keyValuePairs = cleanedString.split('","');
 
-      // Remove any leading or trailing quotes from each key-value pair
+
       this.items = keyValuePairs.map(pair => pair.replace(/"/g, ''));
-      console.log(this.items);
+    
     
    });
   
