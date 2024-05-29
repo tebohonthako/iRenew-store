@@ -15,6 +15,7 @@ export class ProductDetailsComponent implements OnInit{
   product?: Product;
   productID: string ='';
   specsString:string="";
+  prodCategory:string="";
   items: string[] = [];
 
   constructor(private activatedRoute: ActivatedRoute, private productService: ProductService, private router: Router) {}
@@ -28,7 +29,7 @@ export class ProductDetailsComponent implements OnInit{
    this.productService.getById(this.productID).subscribe((data:any)=>{this.product=data; this.specsString=data.specs.toString();
  
     
-   
+      this.prodCategory=data.category;
       const cleanedString = this.specsString.replace(/{|}/g, '');
       const keyValuePairs = cleanedString.split('","');
 
@@ -39,6 +40,9 @@ export class ProductDetailsComponent implements OnInit{
    });
   
 
+  }
+  goBack(){
+    this.router.navigate(['/products',this.prodCategory]);
   }
  
 }

@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { ErrorHandler } from '@angular/core';
 import { AuthService } from 'src/app/services/auth-service.service';
 import { ChangeDetectorRef } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-nav-bar',
@@ -29,14 +30,17 @@ export class NavBarComponent implements OnInit {
     this.router.navigate([`products/${category}`]);
   }
   ngOnInit(): void {
+  
     if(this.authService.getIsLoggedIn()){
-      this.authService.login(localStorage.getItem("token")!)
+      this.authService.login(localStorage.getItem("token")!);
+      
     }
     this.authService.isAuthenticated.subscribe(isAuthenticated => {
       // Update the local isAuthenticated property whenever the authentication status changes
       this.isAuthenticated = isAuthenticated;
    
       this.cd.detectChanges(); //updates the navbar to reflect the changes
+
       
     });
 
@@ -54,21 +58,6 @@ export class NavBarComponent implements OnInit {
     this.router.navigate(['/landing']);
  
   }
-  
  
-  logIn(username: string, password: string) {
 
-    // // Use the AuthService to authenticate the user
-    // this.authService.login(username, password).subscribe(
-    //   (response: { success: boolean, message: string }) => {
-    //     // If the login is successful, update the isLoggedIn variable and navigate to the home page
-    //     this.isLoggedIn = true;
-    //     this.router.navigate(['/landing']);
-    //   },
-    //   (error: Error) => {
-    //     // If the login fails, display an error message
-    //     alert('Invalid username or password');
-    //   }
-    // );
-  }
 }
