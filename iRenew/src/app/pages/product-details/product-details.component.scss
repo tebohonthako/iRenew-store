@@ -182,6 +182,11 @@ html, body {
 .cart-btn:hover {
   background-color: #64af3d;
 }
+li{
+  list-style: none;
+  font-size: 19px;
+  color: #323232;
+}
 
 @media (max-width: 940px) {
   .container {

@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { AuthService } from 'src/app/services/auth-service.service';
 import { Observable } from 'rxjs';
@@ -18,8 +18,12 @@ export class LoginComponent {
   private email='';
   private password="";
   private userId:any;
+  private statusCode!:number|undefined;
+  sCode:any|undefined;
+
+
   constructor(private formbuilder: FormBuilder,private http: HttpClient, private router: Router,private authService: AuthService) { }
-  
+
   ngOnInit(): void 
   {
     this.loginForm = this.formbuilder.group({
@@ -30,25 +34,42 @@ export class LoginComponent {
   
     login() {
       this.password=this.loginForm.value.password;
-      //console.log(this.http.post<any>(this.apiUrl, {"email":this.loginForm.value.email,"password": this.password }));
-       this.http.post<any>(this.apiUrl, {"email":this.loginForm.value.email,"password": this.password }).subscribe(
-        (result) => {
+
+       this.http.post<any>(this.apiUrl, {"email":this.loginForm.value.email,"password": this.password },{ observe: 'response' }).subscribe(
+        (response: HttpResponse<any>) => {
           // Handle successful login
-          console.log('Login successful', result);
+          const result=response.body;
+          this.statusCode=response.status;
+        
+         
           this.authService.login(result.token);
           this.userId= this.authService.getUserIdFromToken(result.token);
-
+        
           this.router.navigate(["/profile/"+this.userId])
           this.loginForm.reset();
-     
+         
+         
+          
         },
         (error) => {
+          
           // Handle login error
-          console.error('Login error:', error);
+          this.statusCode=error.status;
+          this.setCode(error.status);
+         this.authService.setCode(error.status);
+         
+        
         
         }
       );
+       
+    
     }
+   
+setCode(code:any){
+  this.sCode=code;
+}
+  }
 
 // login()
 //     {
@@ -81,9 +102,8 @@ export class LoginComponent {
 //         alert("Something went wrong");
 //       })
 //     }
-     getLoginuser(){
-      return this.getLoginuser;
-      console.log(this.getLoginuser);
-    }
+    //  getLoginuser(){
+    //   return this.getLoginuser;
+    //   console.log(this.getLoginuser);
+    // }
     
-  }

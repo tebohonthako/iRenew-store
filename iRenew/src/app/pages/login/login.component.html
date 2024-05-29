@@ -17,7 +17,9 @@
         <div class="mb-3">
           <div id="password">
             <input type="password" class="form-control" id="inputPassword" formControlName="password" placeholder="Password" />
+
           </div>
+          <small *ngIf="this.sCode==403">Wrong username or password</small>
         </div>
         <div class="mb-3">
           <div class="Remember">
@@ -32,6 +34,7 @@
         <button type="submit" class="btn btn-dark login-button">
           Login
         </button>
+    
       </form>
     </div>
   </div>

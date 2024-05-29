@@ -14,12 +14,13 @@ export class NavBarComponent implements OnInit {
   //authService: any;
   isAuthenticated: boolean=false;
   testVal: string=''
+  userId:string|undefined="";
   testFunc(){
     this.testVal='test';
   }
 
   constructor(private router: Router,private authService: AuthService,private cd: ChangeDetectorRef) {
-    //this.checkLoggedInStatus();
+ 
   }
   goToProds(category: String){
     this.router.navigate([`/products/${category}`]);
@@ -34,27 +35,24 @@ export class NavBarComponent implements OnInit {
     this.authService.isAuthenticated.subscribe(isAuthenticated => {
       // Update the local isAuthenticated property whenever the authentication status changes
       this.isAuthenticated = isAuthenticated;
-      console.log('status changed');
-      this.testVal='Hey';
+   
       this.cd.detectChanges(); //updates the navbar to reflect the changes
       
     });
-    //console.log('this is the navbar ngOnInit()');
+
  
   }
- 
-  // Check the user's login status
-  // checkLoggedInStatus() {
-  //   const token = localStorage.getItem('user');
-  //   this.isLoggedIn =!!token; // Convert truthy/falsy to boolean
-  // }
-
-  // Log out the user
+ gotoProfile(){
+  this.userId= this.authService.getUserIdFromToken(localStorage.getItem('token')!)!;
+        
+  this.router.navigate(["/profile/"+this.userId])
+ }
+  
   logOut() {
     this.authService.logout();
     this.isAuthenticated = false;
     this.router.navigate(['/landing']);
-    console.log('User logged out:', this.isLoggedIn);
+ 
   }
   
  

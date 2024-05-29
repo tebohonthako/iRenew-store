@@ -21,10 +21,15 @@ export class ProductService {
   
     return this.http.get<Product[]>(`${this.apiURL}category/${category}`);
    }
-   getAll(category:String){
+
+  getAll(category:String){
   
     return this.http.get<Product[]>(`${this.apiURL}${category}`);
    }
+  getById(id:string){
+    return this.http.get<Product>(`${this.apiURL}${id}`);
+  }
+
    
    
 

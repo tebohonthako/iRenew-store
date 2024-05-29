@@ -6,7 +6,7 @@ import * as jwt_decode  from 'jwt-decode';
   providedIn: 'root'
 })
 export class AuthService {
-  
+  private statusCode:any;
   private isLoggedIn: boolean = false;
   // private loggedInUserEmail: string = '';
   // private loggedInUserName:string='';
@@ -63,6 +63,10 @@ export class AuthService {
     return this.isLoggedIn;
   }
 
+   setCode(code:any){
+    this.statusCode=code;
+   }
+   getCode(){return this.statusCode;}
   // getLoggedInUserEmail(): string {
   //   return this.loggedInUserEmail;
   // }

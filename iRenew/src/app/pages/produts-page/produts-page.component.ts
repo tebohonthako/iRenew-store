@@ -30,8 +30,8 @@ export class ProdutsPageComponent implements OnInit  {
     
   }
  goToDetails(id:any){
-  console.log("testclick");
-  this.router.navigate(["/productdetails",this.id]);
+ 
+  this.router.navigate(["/productdetails",id]);
  }
   // functionality to add items to the cart
   addToCart(product: Product) {
