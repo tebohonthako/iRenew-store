@@ -1,0 +1,54 @@
+h3 {
+  text-align: center;
+  
+}
+
+p {
+  width: 50%;
+  padding: 7px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+input {
+  padding: 2px;
+  margin: 7px;
+  width: 90%;
+  border: transparent;
+}
+.icon {
+  float: right;
+  width: 12%;
+  
+  &:hover {
+    cursor: pointer;
+    
+  }
+
+  
+}
+
+.container {
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    margin: auto;
+    border-radius: 3%;
+
+  }
+
+  h4 {
+    text-align: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  
+  .container2 {
+    margin-top:10rem ;
+  }
+
+  .container3 {
+    margin-top: 10rem;
+  }

@@ -1,0 +1,43 @@
+<h1 class="welcome-heading">WELCOME TO OUR RENEWED STORE</h1>
+<p class="subheading">Get the best of pre-owned products</p>
+<div class="row row-cols-1 row-cols-md-3 g-4" id="products-cards" *ngFor="let category of categoryItem | keyvalue | slice:0:1">
+  <div class="col">
+    <div class="card h-100">
+      <img
+        src="assets/images/iPHONE PINK.jpeg"
+        class="card-img-top pink-iphone"
+        alt="Pink iPhone 13"
+        width="600"
+      />
+      <div class="card-body">
+        <div class="card-body">
+          <button type="button" class="btn btn-dark shop-button" (click)="onCategoryClick(category.key)">
+            SHOP {{ category.key }}
+        </button>
+       
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <h1 class="welcome-heading">WELCOME TO OUR RENEWED STORE</h1>
+<p class="subheading">Get the best of pre-owned products</p>
+<div class="row row-cols-1 row-cols-md-3 g-4" >
+  <div class="col"  *ngFor="let category of categoryItem | keyvalue | slice:0:3">
+    <div class="card h-100">
+      <img
+      *ngIf="category.value" [src]="category.value.imageUrl" class="card-img-top" alt={{category.value.title}}
+        class="card-img-top"
+        alt="Gold strap apple watch"
+      />
+      <div class="card-body">
+        <button type="button" class="btn btn-dark shop-button" (click)="onCategoryClick(category.key)">
+          SHOP {{ category.key }}
+        </button>
+        
+        <p class="card-text"></p>
+      </div>
+    </div>
+  </div>
+</div> -->

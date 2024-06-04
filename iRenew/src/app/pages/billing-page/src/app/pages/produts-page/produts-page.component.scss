@@ -1,0 +1,19 @@
+body {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
+  }
+  #products-cards {
+    margin-top: 5rem
+  }
+
+.add-to-cart {
+    border-radius: 2rem;
+    font-size: 0.7rem;
+}
+.product-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

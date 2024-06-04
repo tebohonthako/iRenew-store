@@ -1,0 +1,54 @@
+.navbar-brand {
+    margin-left: 100px;
+    
+}
+
+.navbar {
+    background-color: black;
+    height: 3.5rem;
+    color: white;
+    
+}
+.logo-text, .logo-image {
+    color: white;
+    text-decoration: none;
+      
+}
+.logo-image {
+    margin-left: 25px;
+}
+.cart-icon {
+    margin-left: 700px;
+    align-items: center;
+}
+.profile-icon {
+   
+   margin-left: 45px; 
+   
+}
+#logout-text {
+    color: white;
+    padding: 5px;
+    margin-right: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.5rem;
+}
+.myicons {
+    margin-right: 15rem;
+}
+
+.a
+{
+    color: white;
+}
+
+.navbar-nav .nav-link.show {
+    color: #f8f9fa;
+}
+.LOGIN1 {
+    padding: 0.5rem;
+    text-decoration: none;
+    color: #FFF;
+}

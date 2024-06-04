@@ -1,0 +1,108 @@
+<div class="container">
+  <div class="address">
+    <h3>Address Information</h3>
+    <form class="form-Address" [formGroup]="Address" (ngSubmit)="ChangeAdrress()">
+      <div class="mb-3">
+        <input 
+        type="text" 
+        class="form-control"
+        id="inputStreetNumber"
+        formControlName="StreetNumber"
+        placeholder="Street Number"
+        />
+      </div>
+      <div class="mb-3">
+        <input 
+        type="text" 
+        class="form-control"
+        id="inputStreetName"
+        formControlName="inputStreetName"
+        placeholder="Street Name" 
+        />
+      </div>
+      <div class="mb-3">
+        <input type="text" 
+        class="form-control"
+        id="inputSuburb"
+        formControlName="Suburb"
+        placeholder="Suburb" 
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="inputCityorProvince"
+          formControlName="CityorProvince"
+          placeholder="City or Province"
+        />
+      </div>
+      <div class="mb-3">
+        <input 
+        type="text" 
+        class="form-control"
+        id="inputPostalCode"
+        formControlName="PostalCode" 
+        placeholder="Postal Code" 
+        />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Change Address</button>
+      </div>
+    </form>
+  </div>
+
+  <div class="billing">
+    <h3>Billing Information</h3>
+    <form class="form-Billing" [formGroup]="Billing" (ngSubmit)="ChangeBilling()">
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="inputAccountHolderFirstName"
+          formControlName="AccountHolderFirstName"
+          placeholder="Account Holder First Name"
+        />
+      </div>
+      <div class="mb-3">
+        <input
+          type="text"
+          class="form-control"
+          id="inputAccountHolderLastName"
+          formControlName="AccountHolderLastName"
+          placeholder="Account Holder Last Name"
+        />
+      </div>
+      <div class="mb-3">
+        <select class="form-select" aria-label="Bank">
+          <option selected>Bank</option>
+          <option>ABSA</option>
+          <option>STANDARD BANK</option>
+          <option>FNB</option>
+          <option>CAPITEC</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <input 
+        type="text" 
+        class="form-control" 
+        id="inputCardNumber"
+        formControlName="CardNumber"
+        placeholder="Card Number" 
+        />
+      </div>
+      <div class="mb-3">
+        <input 
+        type="text" 
+        class="form-control"
+        id="inputCCV"
+        formControlName="CVV"
+        placeholder="CCV" 
+        />
+      </div>
+      <div class="text-center">
+        <button type="submit" class="btn btn-primary">Change Billing</button>
+      </div>
+    </form>
+  </div>
+</div>

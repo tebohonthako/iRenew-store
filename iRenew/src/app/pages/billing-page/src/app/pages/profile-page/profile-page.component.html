@@ -1,0 +1,40 @@
+    <div class="container3">
+      <div class="container2">
+        <h3 class="John-doe">{{User.name}}</h3>
+        <div class="container">
+          <p>ADDRESS</p>
+          <div class="icon" routerLink="/billing">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </div>
+          <p>WALLET</p>
+          <div class="icon" routerLink="/billing">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-chevron-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708"/>
+            </svg>
+          </div>
+          <p>EMAIL</p>
+          <div class="mb-4">
+            <input
+              type="email"
+              class="form-control border-success"
+              id="exampleFormControlInput1"
+              placeholder=""
+              [(ngModel)]="User.email"
+            />
+          </div>
+          <p>PASSWORD</p>
+          <div class="mb-4">
+            <input
+              type=""
+              class="form-control border-success"
+              id="exampleFormControlInput1"
+              placeholder=""
+            />
+          </div>
+          <br />
+          <h4>Delete your account</h4>
+        </div>
+      </div>
+    </div>

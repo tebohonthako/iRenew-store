@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Product } from 'src/app/interface/product.model';
 import { ProductService } from 'src/app/services/product.service';
 import { Router } from '@angular/router';
-import * as stringify from 'json-stringify-safe';
+
 
 @Component({
   selector: 'app-product-details',

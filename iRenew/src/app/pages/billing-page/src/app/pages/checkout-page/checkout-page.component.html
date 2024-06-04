@@ -1,0 +1,81 @@
+
+    <div class="shipping-address container">
+      <div id="shipping-address">
+        <h1 class="shipping-heading">S H I P P I N G A D D R E S S</h1>
+        <div class="user-address">
+          <p>
+            John Doe <br />
+            123 Plae Grond Street <br />
+            Vermont, California <br />
+            United States of America <br />
+          </p>
+          <!-- change user info button  -->
+          <a href="/billing">
+            <button
+              class="change-user-details"
+              onClick="{handleChangeUserInfo}"
+            >
+              Change
+            </button>
+          </a>
+
+          <form action="" class="form-billing">
+            <img
+              src="assets\images\mastercard-logo-icon.png"
+              alt="mastercard icon"
+              width="60"
+            />
+            <label for="" class="mastercard-label"
+              >Mastercard ending in xxxx</label
+            >
+            <div class="form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck1"
+              />
+              <label class="form-check-label billing-add" for="exampleCheck1"
+                >Billing Address same as Shipping Address</label
+              >
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- REVIEW BAG  -->
+    <div class="review-bag">
+      <h1 id="review-bags">R E V I E W Y O U R B A G</h1>
+      <img
+        src="assets\images\mac-reviewbag.png"
+        alt="laptop"
+        width="120"
+        id="product-pic"
+      />
+      <div *ngFor="let product of products" class="product-specs">
+        <h1 class="product-name">{{ product.title }}</h1>
+        <span>{{ product.description }}</span><br />
+        <span>Price: {{ product.price }} {{ product.currency }}</span><br />
+        <br />
+        <img [src]="product.imageUrl" [alt]="product.title" width="150">
+        
+      </div>
+    </div>
+    <!-- O R D E R   S U M M A R Y   S I D E B A R -->
+    <div class="order-summary-sidebar">
+      <div class="order-summary-container">
+        <h6>Order Summary</h6>
+        <p>Items: R {{ total }}</p>
+        <p>Shipping: R 0.00</p>
+        <p>Gift card: R 0.00</p>
+        <hr>
+        <p class="order-total">T O T A L: R {{ total }}</p>
+        <hr>
+        <a routerLink="/confirmation">
+          <button routerLink="/confirmation" class="place-order-button" (click)="placeOrder()">Place your order</button>
+        </a>
+      </div>
+      <a routerLink="/">
+        <button class='back-btn'>Back</button>
+      </a>
+
+    
